@@ -1,0 +1,1323 @@
+[
+  {
+    "category": "Mental Math",
+    "title": "Multiply by 11 Trick",
+    "problem": "What is 47 x 11?",
+    "cheatsheet": "To multiply any 2-digit number by 11: add the two digits, place the sum between them. If sum > 9, carry the 1 to the left digit.",
+    "workedExample": "47 x 11: 4 + 7 = 11. Place 1 between, carry 1: 4+1=5. Answer: 517",
+    "steps": ["Separate the digits: 4 and 7", "Add them: 4 + 7 = 11", "Since 11 > 9, put 1 in the middle and add 1 to the first digit", "4 + 1 = 5, so the answer is 517"],
+    "answer": "517"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Square Numbers Ending in 5",
+    "problem": "What is 35 squared?",
+    "cheatsheet": "For numbers ending in 5: multiply the tens digit by (tens digit + 1), then append 25.",
+    "workedExample": "35^2: 3 x 4 = 12. Append 25: 1225",
+    "steps": ["Take the tens digit: 3", "Multiply by (tens + 1): 3 x 4 = 12", "Append 25 to get: 1225"],
+    "answer": "1225"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Subtract from 1000",
+    "problem": "What is 1000 - 467?",
+    "cheatsheet": "To subtract from 1000: subtract each digit from 9 (except last from 10).",
+    "workedExample": "1000 - 467: 9-4=5, 9-6=3, 10-7=3. Answer: 533",
+    "steps": ["Take first digit: 9 - 4 = 5", "Take second digit: 9 - 6 = 3", "Take third digit: 10 - 7 = 3", "Result: 533"],
+    "answer": "533"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Doubling and Halving",
+    "problem": "What is 25 x 48?",
+    "cheatsheet": "Double one factor and halve the other. Keep going until one becomes easy to work with.",
+    "workedExample": "25 x 48: halve 48 and double 25 => 50 x 24 => 100 x 12 = 1200",
+    "steps": ["25 x 48: halve 48 to 24, double 25 to 50", "50 x 24: halve 24 to 12, double 50 to 100", "100 x 12 = 1200"],
+    "answer": "1200"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Percentages via Fractions",
+    "problem": "What is 15% of 80?",
+    "cheatsheet": "Break down percentages: 15% = 10% + 5%. 10% is easy (move decimal), then halve for 5%.",
+    "workedExample": "15% of 80: 10% = 8, 5% = 4. Total = 12",
+    "steps": ["10% of 80 = 8 (move decimal one place)", "5% of 80 = 4 (half of 8)", "15% = 8 + 4 = 12"],
+    "answer": "12"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiplying by 5",
+    "problem": "What is 86 x 5?",
+    "cheatsheet": "To multiply by 5: multiply by 10 then divide by 2. Or: divide by 2 then multiply by 10.",
+    "workedExample": "86 x 5: 86 x 10 = 860, /2 = 430",
+    "steps": ["86 x 10 = 860", "860 / 2 = 430"],
+    "answer": "430"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Square of Numbers Near 100",
+    "problem": "What is 97 squared?",
+    "cheatsheet": "For numbers near 100: find the difference from 100, subtract it from the number, then square the difference and append.",
+    "workedExample": "97^2: diff = 3. 97 - 3 = 94. 3^2 = 09. Answer: 9409",
+    "steps": ["Difference from 100: 100 - 97 = 3", "Subtract: 97 - 3 = 94", "Square the difference: 3^2 = 09", "Combine: 9409"],
+    "answer": "9409"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Adding Large Numbers Left to Right",
+    "problem": "What is 458 + 679?",
+    "cheatsheet": "Add from left to right in chunks rather than right to left with carrying.",
+    "workedExample": "458 + 679: 400+600=1000, 50+70=120, 8+9=17. Total=1137",
+    "steps": ["Hundreds: 400 + 600 = 1000", "Tens: 50 + 70 = 120", "Ones: 8 + 9 = 17", "Total: 1000 + 120 + 17 = 1137"],
+    "answer": "1137"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Divisibility by 9",
+    "problem": "Is 837 divisible by 9?",
+    "cheatsheet": "A number is divisible by 9 if the sum of its digits is divisible by 9.",
+    "workedExample": "837: 8+3+7=18. 18 is divisible by 9, so yes.",
+    "steps": ["Sum the digits: 8 + 3 + 7 = 18", "Check if 18 is divisible by 9: 18/9 = 2", "Yes, 837 is divisible by 9 (837/9 = 93)"],
+    "answer": "Yes (93 x 9 = 837)"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiply by 9 Using Fingers",
+    "problem": "What is 9 x 7?",
+    "cheatsheet": "Hold up 10 fingers, fold down the 7th finger. Left fingers = tens, right fingers = ones.",
+    "workedExample": "9 x 7: fold 7th finger. Left = 6, right = 3. Answer: 63",
+    "steps": ["Hold up both hands (10 fingers total)", "Fold down the 7th finger (from left)", "Count fingers to the left: 6 (tens digit)", "Count fingers to the right: 3 (ones digit)", "Answer: 63"],
+    "answer": "63"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Quick Square Roots Estimation",
+    "problem": "Estimate the square root of 70.",
+    "cheatsheet": "Find the nearest perfect squares and estimate between them. sqrt(64)=8, sqrt(81)=9.",
+    "workedExample": "sqrt(70): between 64(8) and 81(9). 70 is 6/17 of the way from 64 to 81. ~8.37",
+    "steps": ["Nearest perfect squares: 64 (=8^2) and 81 (=9^2)", "70 is between them, closer to 64", "Linear estimate: 8 + (70-64)/(81-64) = 8 + 6/17 = 8.35", "Actual sqrt(70) is approximately 8.37"],
+    "answer": "Approximately 8.37"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiplying by 25",
+    "problem": "What is 36 x 25?",
+    "cheatsheet": "To multiply by 25: multiply by 100 then divide by 4.",
+    "workedExample": "36 x 25: 36 x 100 = 3600, /4 = 900",
+    "steps": ["36 x 100 = 3600", "3600 / 4 = 900"],
+    "answer": "900"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Difference of Squares",
+    "problem": "What is 52 x 48?",
+    "cheatsheet": "For numbers equidistant from a round number: a^2 - b^2 = (a+b)(a-b). Here: 50^2 - 2^2.",
+    "workedExample": "52 x 48 = 50^2 - 2^2 = 2500 - 4 = 2496",
+    "steps": ["Recognize 52 x 48 = (50+2)(50-2)", "Apply a^2 - b^2: 50^2 - 2^2", "2500 - 4 = 2496"],
+    "answer": "2496"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Calculate 15% Tip Mentally",
+    "problem": "What is a 15% tip on $68?",
+    "cheatsheet": "10% + 5%. Move decimal for 10%, halve for 5%, add both.",
+    "workedExample": "$68: 10%=$6.80, 5%=$3.40, 15%=$10.20",
+    "steps": ["10% of 68 = 6.80", "5% of 68 = 3.40 (half of 6.80)", "15% = 6.80 + 3.40 = $10.20"],
+    "answer": "$10.20"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiply Two 2-Digit Numbers",
+    "problem": "What is 23 x 14?",
+    "cheatsheet": "Use the distributive property: (a+b)(c+d) = ac + ad + bc + bd, grouping for easy mental math.",
+    "workedExample": "23 x 14: 23 x 10 = 230, 23 x 4 = 92. 230 + 92 = 322",
+    "steps": ["Split 14 into 10 + 4", "23 x 10 = 230", "23 x 4 = 92", "230 + 92 = 322"],
+    "answer": "322"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Cube Root Estimation",
+    "problem": "What is the cube root of 250?",
+    "cheatsheet": "Memorize cubes: 1,8,27,64,125,216,343. 250 is between 216(6^3) and 343(7^3).",
+    "workedExample": "cbrt(250): between 6^3=216 and 7^3=343. Closer to 216. ~6.30.",
+    "steps": ["6^3 = 216, 7^3 = 343", "250 is between them", "Linear estimate: 6 + (250-216)/(343-216) = 6 + 34/127 = 6.27", "Actual cbrt(250) is approximately 6.30"],
+    "answer": "Approximately 6.30"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Adding a Series of Numbers",
+    "problem": "What is the sum of 1 + 2 + 3 + ... + 100?",
+    "cheatsheet": "Use the formula: n(n+1)/2 or pair first and last: (1+100) + (2+99) + ... = 101 x 50.",
+    "workedExample": "Sum = 100 x 101 / 2 = 5050",
+    "steps": ["n = 100", "Apply formula: n(n+1)/2", "100 x 101 / 2 = 10100 / 2 = 5050"],
+    "answer": "5050"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Quick Division by 4",
+    "problem": "What is 332 / 4?",
+    "cheatsheet": "To divide by 4: halve, then halve again.",
+    "workedExample": "332 / 4: half of 332 = 166, half of 166 = 83",
+    "steps": ["First halving: 332 / 2 = 166", "Second halving: 166 / 2 = 83"],
+    "answer": "83"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Recognize Multiples of 11",
+    "problem": "Is 528 divisible by 11?",
+    "cheatsheet": "Alternating sum rule: add/subtract alternating digits. If result is divisible by 11, so is the number.",
+    "workedExample": "528: 5-2+8 = 11. 11 is divisible by 11, so yes.",
+    "steps": ["Alternating sum: 5 - 2 + 8 = 11", "11 is divisible by 11", "Yes, 528 / 11 = 48"],
+    "answer": "Yes (48 x 11 = 528)"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiply by 101",
+    "problem": "What is 67 x 101?",
+    "cheatsheet": "To multiply by 101: write the number twice. 67 x 101 = 6767.",
+    "workedExample": "67 x 101 = 6767",
+    "steps": ["Simply write the number followed by itself", "67 becomes 6767"],
+    "answer": "6767"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Fast Cubes",
+    "problem": "What is 12 cubed?",
+    "cheatsheet": "Use (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3. For 12^3, use (10+2)^3.",
+    "workedExample": "12^3 = 1000 + 600 + 120 + 8 = 1728",
+    "steps": ["12^3 = (10+2)^3", "10^3 = 1000", "3 x 10^2 x 2 = 600", "3 x 10 x 2^2 = 120", "2^3 = 8", "Total: 1000 + 600 + 120 + 8 = 1728"],
+    "answer": "1728"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Divide by 8",
+    "problem": "What is 240 / 8?",
+    "cheatsheet": "Divide by 2 three times, or divide by 4 then by 2.",
+    "workedExample": "240 / 8: 240 / 2 = 120, /2 = 60, /2 = 30",
+    "steps": ["240 / 2 = 120", "120 / 2 = 60", "60 / 2 = 30"],
+    "answer": "30"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Multiplying by 99",
+    "problem": "What is 45 x 99?",
+    "cheatsheet": "Multiply by 100 then subtract the number. 45 x 99 = 4500 - 45.",
+    "workedExample": "45 x 99: 45 x 100 = 4500, 4500 - 45 = 4455",
+    "steps": ["45 x 100 = 4500", "4500 - 45 = 4455"],
+    "answer": "4455"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Fractions to Decimals",
+    "problem": "What is 7/8 as a decimal?",
+    "cheatsheet": "Memorize common fractions: 1/8=0.125, 1/4=0.25, 3/8=0.375, 1/2=0.5, 5/8=0.625, 3/4=0.75, 7/8=0.875.",
+    "workedExample": "7/8: from the 1/8 sequence, 7/8 = 0.875",
+    "steps": ["1/8 = 0.125", "2/8 = 0.250", "3/8 = 0.375", "... 7/8 = 0.875"],
+    "answer": "0.875"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Adding Fractions Quickly",
+    "problem": "What is 1/3 + 1/6?",
+    "cheatsheet": "Find a common denominator mentally. 1/3 = 2/6, so 2/6 + 1/6 = 3/6 = 1/2.",
+    "workedExample": "1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2",
+    "steps": ["Convert 1/3 to sixths: 1/3 = 2/6", "2/6 + 1/6 = 3/6", "Simplify: 3/6 = 1/2"],
+    "answer": "1/2"
+  },
+  {
+    "category": "Mental Math",
+    "title": "Percentage of Any Number",
+    "problem": "What is 8% of 250?",
+    "cheatsheet": "Find 1% (move decimal two places) then multiply. 1% of 250 = 2.5, 8% = 2.5 x 8.",
+    "workedExample": "1% of 250 = 2.5. 8% = 2.5 x 8 = 20.",
+    "steps": ["1% of 250 = 2.50", "8 x 2.50 = 20.00"],
+    "answer": "20"
+  },
+
+  {
+    "category": "Percentage Calculations",
+    "title": "Sales Tax Calculation",
+    "problem": "A $45 item has 8.25% sales tax. What is the total cost?",
+    "cheatsheet": "Total = Price x (1 + tax rate). Or: find the tax amount and add to original.",
+    "workedExample": "Tax = 45 x 0.0825 = 3.7125. Total = 45 + 3.71 = $48.71",
+    "steps": ["Tax rate: 8.25% = 0.0825", "Tax amount: 45 x 0.0825 = $3.7125", "Total: 45 + 3.71 = $48.71 (rounded)"],
+    "answer": "$48.71"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Discount Calculation",
+    "problem": "A $120 jacket is on sale for 35% off. What is the sale price?",
+    "cheatsheet": "Sale price = Original x (1 - discount). Or: find 65% of original (remaining).",
+    "workedExample": "120 x 0.65 = 78. Sale price: $78",
+    "steps": ["35% off means you pay 65%", "120 x 0.65 = 78", "Sale price: $78"],
+    "answer": "$78"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Markup Calculation",
+    "problem": "A store buys items at $20 and marks them up 60%. What is the selling price?",
+    "cheatsheet": "Selling price = Cost x (1 + markup percentage).",
+    "workedExample": "20 x 1.60 = $32. Selling price: $32",
+    "steps": ["Markup of 60%: multiply by 1.60", "20 x 1.60 = 32", "Selling price: $32"],
+    "answer": "$32"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Compound Percentage Change",
+    "problem": "A population of 10,000 grows 10% then decreases 10%. What is the final population?",
+    "cheatsheet": "Apply each change sequentially. Net effect is NOT zero when changes differ in base.",
+    "workedExample": "10000 x 1.10 = 11000. 11000 x 0.90 = 9900.",
+    "steps": ["After 10% increase: 10000 x 1.10 = 11000", "After 10% decrease: 11000 x 0.90 = 9900", "Net change: -100 (1% decrease overall)"],
+    "answer": "9,900"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Finding the Original Price",
+    "problem": "After a 25% discount, you paid $60. What was the original price?",
+    "cheatsheet": "Sale price = Original x (1 - discount). Original = Sale / (1 - discount).",
+    "workedExample": "Original = 60 / 0.75 = $80",
+    "steps": ["You paid 75% of the original (100% - 25%)", "Original = 60 / 0.75 = 80", "Original price: $80"],
+    "answer": "$80"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Percentage Increase",
+    "problem": "Stock price went from $40 to $50. What is the percentage increase?",
+    "cheatsheet": "% increase = (New - Old) / Old x 100. Always divide by the ORIGINAL value.",
+    "workedExample": "(50-40)/40 x 100 = 10/40 x 100 = 25%",
+    "steps": ["Difference: 50 - 40 = 10", "Divide by original: 10/40 = 0.25", "Convert: 0.25 x 100 = 25%"],
+    "answer": "25%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Percentage Decrease",
+    "problem": "A team's wins dropped from 80 to 60. What is the percentage decrease?",
+    "cheatsheet": "% decrease = (Old - New) / Old x 100.",
+    "workedExample": "(80-60)/80 x 100 = 20/80 x 100 = 25%",
+    "steps": ["Decrease: 80 - 60 = 20", "Divide by original: 20/80 = 0.25", "Convert: 0.25 x 100 = 25%"],
+    "answer": "25%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Comparing Percentages",
+    "problem": "Which is better: 20% off $100 or $15 off $80?",
+    "cheatsheet": "Calculate the final price for each option, then compare.",
+    "workedExample": "Option A: 100-20=80. Option B: 80-15=65. Option B saves $15 more.",
+    "steps": ["Option A: $100 with 20% off = $80", "Option B: $80 with $15 off = $65", "Option B is cheaper: $65 < $80"],
+    "answer": "$15 off $80 (final price $65)"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Successive Discounts",
+    "problem": "A $200 item has 40% off, then an extra 25% off. What is the final price?",
+    "cheatsheet": "Apply discounts sequentially: multiply by (1-d1) then (1-d2).",
+    "workedExample": "200 x 0.60 = 120. 120 x 0.75 = 90. Final: $90",
+    "steps": ["First discount: 200 x (1-0.40) = 200 x 0.60 = $120", "Second discount: 120 x (1-0.25) = 120 x 0.75 = $90", "Total discount: 55% (not 65%)"],
+    "answer": "$90"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "What Percent Is X of Y?",
+    "problem": "What percent is 15 of 60?",
+    "cheatsheet": "X is what percent of Y = (X/Y) x 100.",
+    "workedExample": "(15/60) x 100 = 0.25 x 100 = 25%",
+    "steps": ["Divide: 15/60 = 0.25", "Convert to percent: 0.25 x 100 = 25%", "15 is 25% of 60"],
+    "answer": "25%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Tip Calculation",
+    "problem": "Your restaurant bill is $85. What is an 18% tip?",
+    "cheatsheet": "Find 10% (move decimal), find 8% (0.8 x 10%), add both.",
+    "workedExample": "10% = 8.50, 8% = 6.80. Total tip: $15.30",
+    "steps": ["10% of 85 = $8.50", "1% of 85 = $0.85, so 8% = $6.80", "18% = $8.50 + $6.80 = $15.30"],
+    "answer": "$15.30"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Reverse Percentage",
+    "problem": "A salary increased by 12% to $56,000. What was the original salary?",
+    "cheatsheet": "New = Old x 1.12. Old = New / 1.12.",
+    "workedExample": "56000 / 1.12 = $50,000",
+    "steps": ["The new salary is 112% of the original", "Original = 56000 / 1.12", "Original = $50,000"],
+    "answer": "$50,000"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Tax-Included Price",
+    "problem": "An item costs $53.60 after 7% tax. What was the pre-tax price?",
+    "cheatsheet": "Total = Pre-tax x 1.07. Pre-tax = Total / 1.07.",
+    "workedExample": "53.60 / 1.07 = $50.09 (approximately)",
+    "steps": ["Price with tax = pre-tax x 1.07", "Pre-tax = 53.60 / 1.07", "Pre-tax = $50.09"],
+    "answer": "$50.09"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Annual vs Monthly Rate",
+    "problem": "An annual interest rate is 6%. What is the equivalent monthly rate (simple)?",
+    "cheatsheet": "Monthly rate = Annual rate / 12.",
+    "workedExample": "6% / 12 = 0.5% per month",
+    "steps": ["Annual rate: 6%", "Divide by 12 months", "Monthly rate: 0.5%"],
+    "answer": "0.5%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Grade Average",
+    "problem": "Scores: 85, 92, 78, 95, 88. What is the average (mean)?",
+    "cheatsheet": "Mean = sum of all values / number of values.",
+    "workedExample": "(85+92+78+95+88)/5 = 438/5 = 87.6",
+    "steps": ["Sum: 85 + 92 + 78 + 95 + 88 = 438", "Count: 5 scores", "Mean: 438/5 = 87.6"],
+    "answer": "87.6"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Percentage Error",
+    "problem": "You estimated 150, actual was 180. What is the percentage error?",
+    "cheatsheet": "% error = |estimated - actual| / actual x 100.",
+    "workedExample": "|150-180|/180 x 100 = 30/180 x 100 = 16.67%",
+    "steps": ["Absolute error: |150 - 180| = 30", "Divide by actual: 30/180 = 1/6 = 0.1667", "Percentage: 16.67%"],
+    "answer": "16.67%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Profit Margin",
+    "problem": "Revenue $500, cost $350. What is the profit margin percentage?",
+    "cheatsheet": "Profit margin = (Revenue - Cost) / Revenue x 100.",
+    "workedExample": "(500-350)/500 x 100 = 150/500 x 100 = 30%",
+    "steps": ["Profit: 500 - 350 = $150", "Margin: 150/500 = 0.30", "Percentage: 30%"],
+    "answer": "30%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Appreciation Rate",
+    "problem": "A house was worth $200,000 and is now worth $260,000. What is the appreciation rate?",
+    "cheatsheet": "Appreciation = (New - Old) / Old x 100.",
+    "workedExample": "(260000-200000)/200000 x 100 = 60000/200000 x 100 = 30%",
+    "steps": ["Increase: 260,000 - 200,000 = $60,000", "Divide by original: 60,000/200,000 = 0.30", "Appreciation: 30%"],
+    "answer": "30%"
+  },
+  {
+    "category": "Percentage Calculations",
+    "title": "Ratio to Percentage",
+    "problem": "The ratio of wins to total games is 3:5. What is the winning percentage?",
+    "cheatsheet": "Convert ratio to fraction: 3/5 = 60%.",
+    "workedExample": "3/5 = 0.60 = 60%",
+    "steps": ["Ratio 3:5 means 3 wins out of 5 games", "Fraction: 3/5 = 0.60", "Percentage: 60%"],
+    "answer": "60%"
+  },
+
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Basic Distance-Speed-Time",
+    "problem": "A car travels at 55 mph for 3.5 hours. How far does it go?",
+    "cheatsheet": "Distance = Speed x Time (D = S x T)",
+    "workedExample": "55 x 3.5 = 192.5 miles",
+    "steps": ["Formula: D = S x T", "D = 55 x 3.5", "55 x 3 = 165, 55 x 0.5 = 27.5", "165 + 27.5 = 192.5 miles"],
+    "answer": "192.5 miles"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Finding Speed",
+    "problem": "A runner covers 10 km in 50 minutes. What is the speed in km/h?",
+    "cheatsheet": "Speed = Distance / Time. Convert minutes to hours first: 50 min = 5/6 hour.",
+    "workedExample": "10 / (5/6) = 10 x 6/5 = 12 km/h",
+    "steps": ["Convert time: 50 min = 50/60 = 5/6 hour", "Speed = 10 / (5/6) = 10 x (6/5) = 12 km/h"],
+    "answer": "12 km/h"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Finding Time",
+    "problem": "A cyclist travels 45 miles at 15 mph. How long does the trip take?",
+    "cheatsheet": "Time = Distance / Speed.",
+    "workedExample": "45 / 15 = 3 hours",
+    "steps": ["Formula: T = D / S", "T = 45 / 15 = 3 hours"],
+    "answer": "3 hours"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Average Speed (Harmonic Mean)",
+    "problem": "Drive 60 km at 30 km/h, then 60 km at 60 km/h. What is the average speed?",
+    "cheatsheet": "Average speed = Total distance / Total time. Do NOT just average the speeds!",
+    "workedExample": "Time1 = 60/30 = 2h, Time2 = 60/60 = 1h. Avg = 120/3 = 40 km/h",
+    "steps": ["First leg: 60/30 = 2 hours", "Second leg: 60/60 = 1 hour", "Total distance: 120 km", "Total time: 3 hours", "Average speed: 120/3 = 40 km/h"],
+    "answer": "40 km/h"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Two Objects Moving Toward Each Other",
+    "problem": "Two cars start 300 miles apart and drive toward each other at 50 and 70 mph. When do they meet?",
+    "cheatsheet": "Combined speed = sum of individual speeds. Time = distance / combined speed.",
+    "workedExample": "Combined: 50+70 = 120 mph. Time = 300/120 = 2.5 hours",
+    "steps": ["Combined speed: 50 + 70 = 120 mph", "Time to meet: 300/120 = 2.5 hours", "They meet after 2.5 hours (or 2h 30min)"],
+    "answer": "2.5 hours"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Work Rate Problem",
+    "problem": "Pipe A fills a tank in 6 hours. Pipe B fills it in 4 hours. How long working together?",
+    "cheatsheet": "Combined rate = 1/A + 1/B. Time = 1 / (combined rate).",
+    "workedExample": "1/6 + 1/4 = 5/12. Time = 12/5 = 2.4 hours",
+    "steps": ["Pipe A rate: 1/6 tank per hour", "Pipe B rate: 1/4 tank per hour", "Combined: 1/6 + 1/4 = 2/12 + 3/12 = 5/12", "Time: 12/5 = 2.4 hours (2h 24min)"],
+    "answer": "2.4 hours (2h 24min)"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Catch-Up Problem",
+    "problem": "Runner A starts at 8 mph. 30 min later, Runner B starts at 10 mph. How long for B to catch A?",
+    "cheatsheet": "Head start distance = speed_A x delay. Closing speed = speed_B - speed_A. Time = head start / closing speed.",
+    "workedExample": "Head start: 8 x 0.5 = 4 miles. Closing: 10-8=2 mph. Time: 4/2 = 2 hours",
+    "steps": ["A's head start: 8 mph x 0.5 hr = 4 miles", "B closes at: 10 - 8 = 2 mph", "Time for B to close gap: 4/2 = 2 hours"],
+    "answer": "2 hours after B starts"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Round Trip Average Speed",
+    "problem": "A plane flies 2000 km at 500 km/h and returns at 400 km/h. Average speed?",
+    "cheatsheet": "Average = 2 x v1 x v2 / (v1 + v2) for equal distances.",
+    "workedExample": "2 x 500 x 400 / (500 + 400) = 400000/900 = 444.4 km/h",
+    "steps": ["Total distance: 4000 km", "Outbound time: 2000/500 = 4 hours", "Return time: 2000/400 = 5 hours", "Total time: 9 hours", "Average: 4000/9 = 444.4 km/h"],
+    "answer": "444.4 km/h"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Speed Conversion",
+    "problem": "Convert 100 km/h to miles per hour. (1 km = 0.6214 mi)",
+    "cheatsheet": "Multiply km/h by 0.6214 to get mph.",
+    "workedExample": "100 x 0.6214 = 62.14 mph",
+    "steps": ["100 km/h x 0.6214 mi/km = 62.14 mph"],
+    "answer": "62.14 mph"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Three Workers Problem",
+    "problem": "A can do a job in 10 days, B in 15 days, C in 30 days. Together?",
+    "cheatsheet": "Combined rate = 1/A + 1/B + 1/C. Time = 1 / combined rate.",
+    "workedExample": "1/10+1/15+1/30 = 3/30+2/30+1/30 = 6/30 = 1/5. Time = 5 days",
+    "steps": ["A's rate: 1/10 per day", "B's rate: 1/15 per day", "C's rate: 1/30 per day", "Combined: 1/10 + 1/15 + 1/30 = 6/30 = 1/5", "Time: 5 days"],
+    "answer": "5 days"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Unit Rate",
+    "problem": "If 8 lb of apples cost $12, what is the cost per pound?",
+    "cheatsheet": "Unit rate = Total cost / Total quantity.",
+    "workedExample": "12 / 8 = $1.50 per pound",
+    "steps": ["Divide total cost by total weight", "$12 / 8 lb = $1.50 per pound"],
+    "answer": "$1.50/lb"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Upstream/Downstream",
+    "problem": "A boat goes 20 km/h in still water. Current is 4 km/h. How long for 48 km upstream?",
+    "cheatsheet": "Upstream speed = boat speed - current. Downstream speed = boat + current.",
+    "workedExample": "Upstream: 20-4=16 km/h. Time: 48/16 = 3 hours",
+    "steps": ["Upstream speed: 20 - 4 = 16 km/h", "Time: 48/16 = 3 hours"],
+    "answer": "3 hours"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Fuel Consumption Rate",
+    "problem": "A car uses 8 gallons for 200 miles. How many gallons for a 350-mile trip?",
+    "cheatsheet": "Find unit rate (gallons/mile), then multiply by distance.",
+    "workedExample": "Rate: 8/200 = 0.04 gal/mi. 350 x 0.04 = 14 gallons",
+    "steps": ["Fuel rate: 8/200 = 0.04 gallons per mile", "For 350 miles: 350 x 0.04 = 14 gallons"],
+    "answer": "14 gallons"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Rate of Production",
+    "problem": "A machine produces 24 units in 3 hours. How many units in 8 hours?",
+    "cheatsheet": "Find rate: units/time, then multiply by new time.",
+    "workedExample": "Rate: 24/3 = 8 units/hour. 8 hours x 8 = 64 units",
+    "steps": ["Production rate: 24/3 = 8 units per hour", "In 8 hours: 8 x 8 = 64 units"],
+    "answer": "64 units"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Two Trains Same Direction",
+    "problem": "Train A (80 km/h) is ahead of Train B (100 km/h) by 40 km. How long for B to catch A?",
+    "cheatsheet": "Closing speed = faster - slower. Time = gap / closing speed.",
+    "workedExample": "Closing: 100-80=20 km/h. Time: 40/20 = 2 hours",
+    "steps": ["Closing speed: 100 - 80 = 20 km/h", "Time: 40/20 = 2 hours", "B catches A after 2 hours"],
+    "answer": "2 hours"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Walking and Running",
+    "problem": "You walk at 5 km/h for 2 km, then run at 10 km/h for 3 km. Total time?",
+    "cheatsheet": "Time = distance/speed for each segment, then sum.",
+    "workedExample": "Walk: 2/5 = 0.4h. Run: 3/10 = 0.3h. Total: 0.7h = 42 min",
+    "steps": ["Walking time: 2/5 = 0.4 hours (24 min)", "Running time: 3/10 = 0.3 hours (18 min)", "Total: 0.4 + 0.3 = 0.7 hours = 42 minutes"],
+    "answer": "42 minutes"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Filling and Emptying",
+    "problem": "A tap fills at 8 L/min, drain empties at 5 L/min. Tank holds 90L and has 30L. How long to fill?",
+    "cheatsheet": "Net rate = fill rate - drain rate. Time = remaining / net rate.",
+    "workedExample": "Net: 8-5=3 L/min. Remaining: 90-30=60L. Time: 60/3=20 min",
+    "steps": ["Net fill rate: 8 - 5 = 3 L/min", "Water needed: 90 - 30 = 60 L", "Time: 60/3 = 20 minutes"],
+    "answer": "20 minutes"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Pace Calculation",
+    "problem": "A runner finishes 5 km in 25 minutes. What is the pace in min/km?",
+    "cheatsheet": "Pace = Time / Distance. (Not speed!)",
+    "workedExample": "25 / 5 = 5 min/km",
+    "steps": ["Pace = 25 minutes / 5 km = 5 min per km"],
+    "answer": "5 min/km"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Relative Speed Around a Track",
+    "problem": "On a circular track (400m), Runner A at 8 m/s and B at 6 m/s start together. When does A lap B?",
+    "cheatsheet": "Lap time = circumference / (faster speed - slower speed).",
+    "workedExample": "400 / (8-6) = 400/2 = 200 seconds",
+    "steps": ["Relative speed: 8 - 6 = 2 m/s", "Time to lap: 400/2 = 200 seconds", "200 seconds = 3 min 20 sec"],
+    "answer": "200 seconds (3 min 20 sec)"
+  },
+  {
+    "category": "Speed/Rate Problems",
+    "title": "Cost Per Unit Comparison",
+    "problem": "Brand A: $4.50 for 500g. Brand B: $7.20 for 800g. Which is cheaper per gram?",
+    "cheatsheet": "Compare unit prices: cost/weight for each brand.",
+    "workedExample": "A: 450/500=0.009/g. B: 720/800=0.009/g. Same price per gram.",
+    "steps": ["Brand A: $4.50/500g = $0.009/g", "Brand B: $7.20/800g = $0.009/g", "They are the same price per gram"],
+    "answer": "Same price ($0.009/g)"
+  },
+
+  {
+    "category": "Probability & Counting",
+    "title": "Basic Probability",
+    "problem": "A die is rolled once. What is P(rolling a 3 or 5)?",
+    "cheatsheet": "P(A or B) = P(A) + P(B) for mutually exclusive events.",
+    "workedExample": "P(3) = 1/6, P(5) = 1/6. P(3 or 5) = 1/6 + 1/6 = 2/6 = 1/3",
+    "steps": ["P(rolling 3) = 1/6", "P(rolling 5) = 1/6", "P(3 or 5) = 1/6 + 1/6 = 2/6 = 1/3"],
+    "answer": "1/3"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Permutation",
+    "problem": "How many ways to arrange 4 books on a shelf from a set of 7?",
+    "cheatsheet": "P(n,r) = n!/(n-r)! = 7!/3! = 7x6x5x4",
+    "workedExample": "P(7,4) = 7 x 6 x 5 x 4 = 840",
+    "steps": ["P(7,4) = 7! / (7-4)!", "= 7! / 3! = (7x6x5x4x3!)/3!", "= 7 x 6 x 5 x 4 = 840"],
+    "answer": "840"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Combination",
+    "problem": "How many ways to choose 3 students from a class of 10?",
+    "cheatsheet": "C(n,r) = n!/[r!(n-r)!] = 10!/(3!7!) = (10x9x8)/(3x2x1)",
+    "workedExample": "C(10,3) = 120/6 = 120",
+    "steps": ["C(10,3) = 10!/(3!7!)", "= (10 x 9 x 8) / (3 x 2 x 1)", "= 720/6 = 120"],
+    "answer": "120"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Independent Events",
+    "problem": "Flip a coin and roll a die. What is P(heads AND even number)?",
+    "cheatsheet": "P(A and B) = P(A) x P(B) for independent events.",
+    "workedExample": "P(heads) = 1/2, P(even) = 1/2. P(both) = 1/2 x 1/2 = 1/4",
+    "steps": ["P(heads) = 1/2", "P(even on die) = 3/6 = 1/2", "P(both) = 1/2 x 1/2 = 1/4"],
+    "answer": "1/4"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Complement Rule",
+    "problem": "What is the probability of NOT getting a 6 on a standard die?",
+    "cheatsheet": "P(not A) = 1 - P(A).",
+    "workedExample": "P(6) = 1/6. P(not 6) = 1 - 1/6 = 5/6",
+    "steps": ["P(rolling 6) = 1/6", "P(not 6) = 1 - 1/6 = 5/6"],
+    "answer": "5/6"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Drawing Without Replacement",
+    "problem": "Draw 2 cards from a standard deck. What is P(both are aces)?",
+    "cheatsheet": "P = (4/52) x (3/51) for sequential draws without replacement.",
+    "workedExample": "4/52 x 3/51 = 1/13 x 1/17 = 1/221",
+    "steps": ["First ace: 4/52 = 1/13", "Second ace (after first removed): 3/51 = 1/17", "P(both) = 1/13 x 1/17 = 1/221"],
+    "answer": "1/221"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "At Least One",
+    "problem": "Roll a die 3 times. What is P(at least one 6)?",
+    "cheatsheet": "P(at least one) = 1 - P(none). Use complement rule.",
+    "workedExample": "P(no 6 in 1 roll) = 5/6. P(no 6 in 3 rolls) = (5/6)^3 = 125/216. P(at least one 6) = 1 - 125/216 = 91/216",
+    "steps": ["P(no 6 in one roll) = 5/6", "P(no 6 in three rolls) = (5/6)^3 = 125/216", "P(at least one 6) = 1 - 125/216 = 91/216"],
+    "answer": "91/216 (about 42.1%)"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Arrangements with Repetition",
+    "problem": "How many distinct arrangements of the word MISSISSIPPI?",
+    "cheatsheet": "Total arrangements = n!/(n1! x n2! x ...) for repeated letters.",
+    "workedExample": "11!/(1!4!4!2!) = 39916800/(24x24x2) = 34650",
+    "steps": ["Total letters: 11 (1M, 4I, 4S, 2P)", "11!/(1!4!4!2!) = 39916800/(1x24x24x2)", "= 39916800/1152 = 34650"],
+    "answer": "34,650"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Binomial Probability",
+    "problem": "A coin is flipped 5 times. What is P(exactly 3 heads)?",
+    "cheatsheet": "P = C(n,k) x p^k x (1-p)^(n-k) where n=5, k=3, p=0.5.",
+    "workedExample": "C(5,3) x (1/2)^5 = 10 x 1/32 = 10/32 = 5/16",
+    "steps": ["C(5,3) = 10 ways", "P(any specific sequence of 3H,2T) = (1/2)^5 = 1/32", "P(exactly 3 heads) = 10 x 1/32 = 5/16"],
+    "answer": "5/16 (31.25%)"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Fundamental Counting Principle",
+    "problem": "A meal has 3 appetizers, 5 main courses, and 4 desserts. How many possible meals?",
+    "cheatsheet": "Multiply the number of choices for each independent decision.",
+    "workedExample": "3 x 5 x 4 = 60 possible meals",
+    "steps": ["3 choices for appetizer", "5 choices for main course", "4 choices for dessert", "Total: 3 x 5 x 4 = 60"],
+    "answer": "60"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "P(A or B) with Overlap",
+    "problem": "In a class, 12 play soccer, 8 play basketball, 5 play both. What is P(playing at least one sport) if there are 30 students?",
+    "cheatsheet": "P(A or B) = P(A) + P(B) - P(A and B).",
+    "workedExample": "12/30 + 8/30 - 5/30 = 15/30 = 1/2",
+    "steps": ["P(soccer) = 12/30", "P(basketball) = 8/30", "P(both) = 5/30", "P(at least one) = 12/30 + 8/30 - 5/30 = 15/30 = 50%"],
+    "answer": "50% (15 students)"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Expected Value",
+    "problem": "A lottery ticket costs $2. You have 1% chance to win $100. What is the expected value?",
+    "cheatsheet": "EV = sum of (probability x outcome) for all outcomes.",
+    "workedExample": "EV = 0.01 x $100 + 0.99 x $0 = $1. Net: $1 - $2 = -$1",
+    "steps": ["Win: P=0.01, value=$100, contribution=0.01x100=$1", "Lose: P=0.99, value=$0, contribution=$0", "Expected value of ticket: $1", "Net expected value: $1 - $2 = -$1 (expected loss)"],
+    "answer": "-$1 (expected loss of $1)"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Conditional Probability",
+    "problem": "A bag has 5 red and 3 blue marbles. Two are drawn without replacement. P(both red)?",
+    "cheatsheet": "P(both red) = P(1st red) x P(2nd red | 1st was red).",
+    "workedExample": "5/8 x 4/7 = 20/56 = 5/14",
+    "steps": ["P(first red) = 5/8", "After removing a red: 4 red, 3 blue = 7 total", "P(second red | first red) = 4/7", "P(both red) = 5/8 x 4/7 = 20/56 = 5/14"],
+    "answer": "5/14"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Odds vs Probability",
+    "problem": "The probability of rain is 0.2. What are the odds against rain?",
+    "cheatsheet": "Odds against = (1-P)/P. If P=0.2, odds against = 0.8/0.2 = 4:1.",
+    "workedExample": "Odds against rain = 0.8/0.2 = 4:1",
+    "steps": ["P(rain) = 0.2", "P(no rain) = 0.8", "Odds against rain = 0.8 : 0.2 = 4 : 1"],
+    "answer": "4:1 against"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Permutation with Identical Items",
+    "problem": "How many ways to arrange 3 red and 2 blue flags in a row?",
+    "cheatsheet": "n!/(r! x b!) where n=5 total flags.",
+    "workedExample": "5!/(3!2!) = 120/(6x2) = 10",
+    "steps": ["Total positions: 5", "Choose 3 of 5 for red: C(5,3) = 10", "Or: 5!/(3!2!) = 10"],
+    "answer": "10"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Birthday Problem",
+    "problem": "In a room of 23 people, what is P(at least two share a birthday)? (Use the approximation)",
+    "cheatsheet": "P(no shared birthday) = (365/365)(364/365)(363/365)...(343/365). P(shared) = 1 - P(no shared).",
+    "workedExample": "P(no shared) is approximately 0.4927. P(shared) = approximately 50.7%.",
+    "steps": ["Person 1: 365/365 = 1", "Person 2: 364/365", "Person 3: 363/365", "... Person 23: 343/365", "P(no shared) = product of all = 0.4927", "P(at least one shared) = 1 - 0.4927 = 0.5073 (about 50.7%)"],
+    "answer": "About 50.7%"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Combination with Slots",
+    "problem": "From 12 people, choose a president, VP, and treasurer. How many ways?",
+    "cheatsheet": "This is a PERMUTATION (order matters): P(12,3) = 12 x 11 x 10.",
+    "workedExample": "P(12,3) = 1320",
+    "steps": ["President: 12 choices", "VP: 11 remaining choices", "Treasurer: 10 remaining choices", "Total: 12 x 11 x 10 = 1320"],
+    "answer": "1,320"
+  },
+  {
+    "category": "Probability & Counting",
+    "title": "Two Dice Probability",
+    "problem": "Roll two dice. What is P(sum = 7)?",
+    "cheatsheet": "List all combinations that sum to 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 out of 36.",
+    "workedExample": "6/36 = 1/6",
+    "steps": ["Total outcomes: 6 x 6 = 36", "Sum = 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 ways", "P(sum 7) = 6/36 = 1/6"],
+    "answer": "1/6"
+  },
+
+  {
+    "category": "Geometry Calculations",
+    "title": "Area of a Circle",
+    "problem": "Find the area of a circle with radius 14 cm.",
+    "cheatsheet": "Area = pi x r^2 = pi x 14^2 = 196*pi.",
+    "workedExample": "A = pi x 196 = 196*pi is approximately 615.75 cm^2",
+    "steps": ["A = pi x r^2", "r = 14", "A = pi x 14^2 = pi x 196", "Approximately 615.75 cm^2"],
+    "answer": "196*pi (about 615.75 cm^2)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Heron's Formula",
+    "problem": "Find the area of a triangle with sides 5, 6, and 7.",
+    "cheatsheet": "s = (a+b+c)/2. Area = sqrt(s(s-a)(s-b)(s-c)).",
+    "workedExample": "s = 9. A = sqrt(9x4x3x2) = sqrt(216) = 6*sqrt(6) is approximately 14.7",
+    "steps": ["s = (5+6+7)/2 = 9", "Area = sqrt(9(9-5)(9-6)(9-7))", "= sqrt(9 x 4 x 3 x 2)", "= sqrt(216) = 6*sqrt(6) is approximately 14.7"],
+    "answer": "6*sqrt(6) (about 14.7 sq units)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Pythagorean Theorem",
+    "problem": "Find the hypotenuse of a right triangle with legs 9 and 12.",
+    "cheatsheet": "c^2 = a^2 + b^2. c = sqrt(a^2 + b^2).",
+    "workedExample": "c = sqrt(81 + 144) = sqrt(225) = 15",
+    "steps": ["a = 9, b = 12", "c^2 = 9^2 + 12^2 = 81 + 144 = 225", "c = sqrt(225) = 15"],
+    "answer": "15"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Volume of a Cylinder",
+    "problem": "Find the volume of a cylinder with radius 5 and height 12.",
+    "cheatsheet": "V = pi x r^2 x h",
+    "workedExample": "V = pi x 25 x 12 = 300*pi is approximately 942.48",
+    "steps": ["V = pi x r^2 x h", "V = pi x 5^2 x 12", "= pi x 25 x 12 = 300*pi", "Approximately 942.48"],
+    "answer": "300*pi (about 942.48)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Surface Area of a Sphere",
+    "problem": "Find the surface area of a sphere with radius 5.",
+    "cheatsheet": "SA = 4 x pi x r^2",
+    "workedExample": "SA = 4 x pi x 25 = 100*pi is approximately 314.16",
+    "steps": ["SA = 4 x pi x r^2", "= 4 x pi x 5^2", "= 4 x pi x 25 = 100*pi", "Approximately 314.16"],
+    "answer": "100*pi (about 314.16)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Area of a Sector",
+    "problem": "Find the area of a sector with central angle 90 degrees in a circle of radius 10.",
+    "cheatsheet": "Area = (theta/360) x pi x r^2",
+    "workedExample": "A = (90/360) x pi x 100 = 25*pi is approximately 78.54",
+    "steps": ["A = (90/360) x pi x r^2", "= (1/4) x pi x 100", "= 25*pi is approximately 78.54"],
+    "answer": "25*pi (about 78.54)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Volume of a Cone",
+    "problem": "Find the volume of a cone with radius 4 and height 9.",
+    "cheatsheet": "V = (1/3) x pi x r^2 x h",
+    "workedExample": "V = (1/3) x pi x 16 x 9 = 48*pi is approximately 150.80",
+    "steps": ["V = (1/3) x pi x r^2 x h", "= (1/3) x pi x 16 x 9", "= (1/3) x 144 x pi = 48*pi", "Approximately 150.80"],
+    "answer": "48*pi (about 150.80)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Area of a Trapezoid",
+    "problem": "Find the area of a trapezoid with parallel sides 10 and 16, height 7.",
+    "cheatsheet": "A = (1/2)(a + b) x h where a and b are parallel sides.",
+    "workedExample": "A = (1/2)(10+16) x 7 = 13 x 7 = 91",
+    "steps": ["A = (1/2)(10 + 16) x 7", "= (1/2)(26) x 7", "= 13 x 7 = 91"],
+    "answer": "91 square units"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Diagonal of a Rectangle",
+    "problem": "Find the diagonal of a rectangle 8 x 15.",
+    "cheatsheet": "d = sqrt(l^2 + w^2) by Pythagorean theorem.",
+    "workedExample": "d = sqrt(64 + 225) = sqrt(289) = 17",
+    "steps": ["d = sqrt(8^2 + 15^2)", "= sqrt(64 + 225)", "= sqrt(289) = 17"],
+    "answer": "17"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Surface Area of a Cylinder (Total)",
+    "problem": "Find the total surface area of a cylinder with radius 3 and height 10.",
+    "cheatsheet": "SA = 2*pi*r^2 + 2*pi*r*h = 2*pi*r*(r+h)",
+    "workedExample": "SA = 2*pi*3*(3+10) = 6*pi*13 = 78*pi is approximately 245.04",
+    "steps": ["Lateral area: 2*pi*3*10 = 60*pi", "Base areas: 2*pi*3^2 = 18*pi", "Total: 60*pi + 18*pi = 78*pi"],
+    "answer": "78*pi (about 245.04)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Arc Length",
+    "problem": "Find the arc length for a 120-degree angle in a circle of radius 6.",
+    "cheatsheet": "Arc length = (theta/360) x 2*pi*r",
+    "workedExample": "L = (120/360) x 2*pi*6 = (1/3) x 12*pi = 4*pi is approximately 12.57",
+    "steps": ["L = (120/360) x 2 x pi x 6", "= (1/3) x 12 x pi", "= 4*pi is approximately 12.57"],
+    "answer": "4*pi (about 12.57)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Volume of a Pyramid",
+    "problem": "Find the volume of a square pyramid with base 6 and height 8.",
+    "cheatsheet": "V = (1/3) x base_area x height = (1/3) x s^2 x h",
+    "workedExample": "V = (1/3) x 36 x 8 = 96",
+    "steps": ["Base area = 6^2 = 36", "V = (1/3) x 36 x 8", "= 12 x 8 = 96"],
+    "answer": "96 cubic units"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Perimeter of Composite Shape",
+    "problem": "A rectangle 10 x 6 with a semicircle on one 10-unit side. Find the perimeter.",
+    "cheatsheet": "Perimeter = 3 sides of rectangle + semicircle arc = 6 + 10 + 6 + pi x 5.",
+    "workedExample": "P = 6+10+6+5*pi = 22+5*pi is approximately 37.71",
+    "steps": ["Three sides: 6 + 10 + 6 = 22", "Semicircle arc: pi x 5 = 5*pi (diameter = 10, r = 5)", "Total: 22 + 5*pi is approximately 37.71"],
+    "answer": "22 + 5*pi (about 37.71)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Distance Formula",
+    "problem": "Find the distance between (1, 2) and (5, 6).",
+    "cheatsheet": "d = sqrt((x2-x1)^2 + (y2-y1)^2)",
+    "workedExample": "d = sqrt(16+16) = sqrt(32) = 4*sqrt(2) is approximately 5.66",
+    "steps": ["dx = 5-1 = 4, dy = 6-2 = 4", "d = sqrt(4^2 + 4^2)", "= sqrt(16+16) = sqrt(32) = 4*sqrt(2)"],
+    "answer": "4*sqrt(2) (about 5.66)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Slope of a Line",
+    "problem": "Find the slope between points (2, 3) and (8, 15).",
+    "cheatsheet": "m = (y2-y1)/(x2-x1)",
+    "workedExample": "m = (15-3)/(8-2) = 12/6 = 2",
+    "steps": ["m = (15-3)/(8-2)", "= 12/6 = 2"],
+    "answer": "2"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Volume of Composite Solid",
+    "problem": "A cylinder (r=3, h=5) has a hemisphere on top. Find total volume.",
+    "cheatsheet": "V = pi*r^2*h + (2/3)*pi*r^3",
+    "workedExample": "V = 45*pi + 18*pi = 63*pi is approximately 197.92",
+    "steps": ["Cylinder: pi x 9 x 5 = 45*pi", "Hemisphere: (2/3) x pi x 27 = 18*pi", "Total: 45*pi + 18*pi = 63*pi"],
+    "answer": "63*pi (about 197.92)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Area Between Shapes",
+    "problem": "Find the area of a ring (annulus) with outer radius 8 and inner radius 5.",
+    "cheatsheet": "Area = pi x (R^2 - r^2)",
+    "workedExample": "A = pi x (64 - 25) = 39*pi is approximately 122.52",
+    "steps": ["A = pi x (8^2 - 5^2)", "= pi x (64 - 25)", "= 39*pi is approximately 122.52"],
+    "answer": "39*pi (about 122.52)"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Area of a Rhombus",
+    "problem": "Find the area of a rhombus with diagonals 10 and 14.",
+    "cheatsheet": "Area = (d1 x d2) / 2",
+    "workedExample": "A = (10 x 14) / 2 = 70",
+    "steps": ["A = (d1 x d2) / 2", "= (10 x 14) / 2", "= 140 / 2 = 70"],
+    "answer": "70 square units"
+  },
+  {
+    "category": "Geometry Calculations",
+    "title": "Similar Triangle Sides",
+    "problem": "Triangle ABC ~ DEF. AB=6, DE=9, BC=10. Find EF.",
+    "cheatsheet": "Corresponding sides are proportional: AB/DE = BC/EF.",
+    "workedExample": "6/9 = 10/EF => EF = 15",
+    "steps": ["Ratio: AB/DE = 6/9 = 2/3", "BC/EF = 2/3", "10/EF = 2/3 => EF = 15"],
+    "answer": "15"
+  },
+
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving Linear Equations",
+    "problem": "Solve: 5x - 3 = 2x + 9",
+    "cheatsheet": "Move variables to one side, constants to the other. Combine like terms.",
+    "workedExample": "5x - 2x = 9 + 3 => 3x = 12 => x = 4",
+    "steps": ["Subtract 2x from both sides: 5x - 2x - 3 = 9", "Add 3 to both sides: 3x = 12", "Divide by 3: x = 4"],
+    "answer": "x = 4"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Factoring Quadratics",
+    "problem": "Factor: x^2 + 7x + 12",
+    "cheatsheet": "Find two numbers that multiply to the constant term and add to the middle coefficient.",
+    "workedExample": "3 x 4 = 12, 3 + 4 = 7. So (x+3)(x+4)",
+    "steps": ["Need numbers that multiply to 12 and add to 7", "3 and 4: 3x4=12, 3+4=7", "Factor: (x + 3)(x + 4)"],
+    "answer": "(x + 3)(x + 4)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Expanding Expressions",
+    "problem": "Expand and simplify: (2x + 3)(x - 5)",
+    "cheatsheet": "FOIL: First, Outer, Inner, Last. Then combine like terms.",
+    "workedExample": "2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15",
+    "steps": ["First: 2x x x = 2x^2", "Outer: 2x x (-5) = -10x", "Inner: 3 x x = 3x", "Last: 3 x (-5) = -15", "Combine: 2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15"],
+    "answer": "2x^2 - 7x - 15"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Simplifying Fractions",
+    "problem": "Simplify: (x^2 - 4) / (x^2 + 5x + 6)",
+    "cheatsheet": "Factor numerator and denominator, then cancel common factors.",
+    "workedExample": "(x+2)(x-2) / (x+2)(x+3) = (x-2)/(x+3)",
+    "steps": ["Numerator: x^2 - 4 = (x+2)(x-2) (difference of squares)", "Denominator: x^2+5x+6 = (x+2)(x+3)", "Cancel (x+2): (x-2)/(x+3)"],
+    "answer": "(x-2)/(x+3)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving with Quadratic Formula",
+    "problem": "Solve: 2x^2 + 5x - 3 = 0",
+    "cheatsheet": "x = (-b +/- sqrt(b^2 - 4ac)) / (2a)",
+    "workedExample": "x = (-5 +/- sqrt(25+24))/4 = (-5 +/- 7)/4 => x = 1/2 or x = -3",
+    "steps": ["a=2, b=5, c=-3", "Discriminant: 25 - 4(2)(-3) = 25 + 24 = 49", "x = (-5 +/- 7) / 4", "x = 2/4 = 1/2 or x = -12/4 = -3"],
+    "answer": "x = 1/2 or x = -3"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving Systems by Substitution",
+    "problem": "Solve: y = 2x + 1 and 3x + y = 11",
+    "cheatsheet": "Substitute one equation into the other, solve for one variable, then back-substitute.",
+    "workedExample": "3x + (2x+1) = 11 => 5x = 10 => x = 2, y = 5",
+    "steps": ["Substitute y = 2x+1 into second equation", "3x + (2x+1) = 11", "5x + 1 = 11", "5x = 10 => x = 2", "y = 2(2)+1 = 5"],
+    "answer": "x = 2, y = 5"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Difference of Squares",
+    "problem": "Factor: 9x^2 - 25",
+    "cheatsheet": "a^2 - b^2 = (a+b)(a-b).",
+    "workedExample": "(3x)^2 - 5^2 = (3x+5)(3x-5)",
+    "steps": ["Recognize: (3x)^2 - 5^2", "Apply formula: (3x+5)(3x-5)"],
+    "answer": "(3x+5)(3x-5)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Completing the Square",
+    "problem": "Complete the square: x^2 + 6x + ?",
+    "cheatsheet": "Take half of the x coefficient, square it. (b/2)^2",
+    "workedExample": "(6/2)^2 = 9. So x^2 + 6x + 9 = (x+3)^2",
+    "steps": ["Coefficient of x: 6", "Half of 6: 3", "Square: 9", "x^2 + 6x + 9 = (x+3)^2"],
+    "answer": "9 (makes (x+3)^2)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving Inequalities",
+    "problem": "Solve: -2(3x - 4) > 10",
+    "cheatsheet": "Distribute, combine, isolate x. FLIP the inequality when dividing by a NEGATIVE number.",
+    "workedExample": "-6x + 8 > 10 => -6x > 2 => x < -1/3",
+    "steps": ["Distribute: -6x + 8 > 10", "Subtract 8: -6x > 2", "Divide by -6 (FLIP): x < -1/3"],
+    "answer": "x < -1/3"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Factoring by Grouping",
+    "problem": "Factor: x^3 + 2x^2 + 3x + 6",
+    "cheatsheet": "Group terms in pairs, factor out GCF from each pair, then factor common binomial.",
+    "workedExample": "x^2(x+2) + 3(x+2) = (x^2+3)(x+2)",
+    "steps": ["Group: (x^3+2x^2) + (3x+6)", "Factor each group: x^2(x+2) + 3(x+2)", "Factor out (x+2): (x^2+3)(x+2)"],
+    "answer": "(x^2+3)(x+2)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Simplifying Radicals",
+    "problem": "Simplify: sqrt(72)",
+    "cheatsheet": "Find the largest perfect square factor, then split: sqrt(a x b) = sqrt(a) x sqrt(b).",
+    "workedExample": "sqrt(72) = sqrt(36 x 2) = 6*sqrt(2)",
+    "steps": ["Factor 72: 72 = 36 x 2", "36 is a perfect square", "sqrt(72) = sqrt(36) x sqrt(2) = 6*sqrt(2)"],
+    "answer": "6*sqrt(2)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Adding Rational Expressions",
+    "problem": "Simplify: 1/(x+1) + 1/(x-1)",
+    "cheatsheet": "Find common denominator, combine numerators, simplify.",
+    "workedExample": "[(x-1)+(x+1)]/(x+1)(x-1) = 2x/(x^2-1)",
+    "steps": ["Common denominator: (x+1)(x-1) = x^2-1", "Numerator: (x-1) + (x+1) = 2x", "Result: 2x/(x^2-1)"],
+    "answer": "2x/(x^2-1)"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Exponent Rules",
+    "problem": "Simplify: (2x^3 y^2)^3 / (4x^2 y)^2",
+    "cheatsheet": "(ab)^n = a^n b^n. (a^m)^n = a^(mn). a^m/a^n = a^(m-n).",
+    "workedExample": "8x^9 y^6 / 16x^4 y^2 = (8/16)x^5 y^4 = x^5 y^4 / 2",
+    "steps": ["Numerator: (2x^3 y^2)^3 = 8x^9 y^6", "Denominator: (4x^2 y)^2 = 16x^4 y^2", "Divide: (8/16) x^(9-4) y^(6-2)", "= (1/2) x^5 y^4"],
+    "answer": "x^5 y^4 / 2"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving Absolute Value Equations",
+    "problem": "Solve: |3x - 2| = 7",
+    "cheatsheet": "Set up two equations: (expression) = value AND (expression) = -value.",
+    "workedExample": "3x-2=7 => x=3. 3x-2=-7 => x=-5/3.",
+    "steps": ["Case 1: 3x-2 = 7 => 3x = 9 => x = 3", "Case 2: 3x-2 = -7 => 3x = -5 => x = -5/3", "Solutions: x = 3 or x = -5/3"],
+    "answer": "x = 3 or x = -5/3"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Solving Rational Equations",
+    "problem": "Solve: 1/x + 1/3 = 1/2",
+    "cheatsheet": "Multiply through by the LCD to clear fractions, then solve.",
+    "workedExample": "LCD = 6x. 6 + 2x = 3x => x = 6",
+    "steps": ["LCD = 6x", "Multiply each term by 6x:", "6x(1/x) + 6x(1/3) = 6x(1/2)", "6 + 2x = 3x", "x = 6"],
+    "answer": "x = 6"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Quadratic Inequality",
+    "problem": "Solve: x^2 - 4x + 3 < 0",
+    "cheatsheet": "Factor, find roots, test intervals.",
+    "workedExample": "(x-1)(x-3)<0. Roots: 1, 3. Test: between roots is negative. Answer: 1 < x < 3",
+    "steps": ["Factor: (x-1)(x-3) < 0", "Roots: x = 1 and x = 3", "Test x=0: (0-1)(0-3) = 3 > 0 (not in solution)", "Test x=2: (2-1)(2-3) = -1 < 0 (in solution)", "Test x=4: (4-1)(4-3) = 3 > 0 (not in solution)", "Solution: 1 < x < 3"],
+    "answer": "1 < x < 3"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Logarithmic Equation",
+    "problem": "Solve: log_2(x+3) = 4",
+    "cheatsheet": "Convert to exponential form: log_b(x) = n means b^n = x.",
+    "workedExample": "2^4 = x + 3 => x = 13",
+    "steps": ["log_2(x+3) = 4 means 2^4 = x+3", "16 = x + 3", "x = 13"],
+    "answer": "x = 13"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Perfect Square Trinomial",
+    "problem": "Factor: x^2 - 10x + 25",
+    "cheatsheet": "a^2 - 2ab + b^2 = (a-b)^2. Check if it fits this pattern.",
+    "workedExample": "x^2 - 10x + 25 = (x - 5)^2",
+    "steps": ["Check: does b^2 = 25? Yes, b = 5", "Does 2ab = 10? Yes, 2(1)(5) = 10", "Factor: (x - 5)^2"],
+    "answer": "(x - 5)^2"
+  },
+  {
+    "category": "Algebraic Manipulation",
+    "title": "Cube of a Binomial",
+    "problem": "Expand: (x + 2)^3",
+    "cheatsheet": "(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3",
+    "workedExample": "x^3 + 6x^2 + 12x + 8",
+    "steps": ["(x+2)^3 = x^3 + 3(x^2)(2) + 3(x)(4) + 8", "= x^3 + 6x^2 + 12x + 8"],
+    "answer": "x^3 + 6x^2 + 12x + 8"
+  },
+
+  {
+    "category": "Financial Math",
+    "title": "Simple Interest",
+    "problem": "Find the simple interest on $3000 at 5% for 4 years.",
+    "cheatsheet": "I = P x r x t (Principal x Rate x Time)",
+    "workedExample": "I = 3000 x 0.05 x 4 = $600",
+    "steps": ["I = P x r x t", "= 3000 x 0.05 x 4", "= 150 x 4 = $600"],
+    "answer": "$600"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Compound Interest",
+    "problem": "Find the amount after 3 years: $2000 at 6% compounded annually.",
+    "cheatsheet": "A = P(1 + r/n)^(nt). For annual: A = P(1+r)^t",
+    "workedExample": "A = 2000(1.06)^3 = 2000 x 1.19102 = $2382.03",
+    "steps": ["A = P(1 + r)^t", "= 2000(1.06)^3", "= 2000 x 1.19102", "= $2382.03"],
+    "answer": "$2382.03"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Monthly Compound Interest",
+    "problem": "$5000 at 8% compounded monthly for 2 years. Final amount?",
+    "cheatsheet": "A = P(1 + r/12)^(12t)",
+    "workedExample": "A = 5000(1 + 0.08/12)^24 = 5000(1.00667)^24 = $5866.60",
+    "steps": ["Monthly rate: 0.08/12 = 0.00667", "Periods: 12 x 2 = 24", "A = 5000(1.00667)^24", "= 5000 x 1.17332", "= $5866.60"],
+    "answer": "$5866.60"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Loan Payment (Fixed Rate)",
+    "problem": "$150,000 loan at 4.5% for 30 years. Approximate monthly payment?",
+    "cheatsheet": "M = P[r(1+r)^n]/[(1+r)^n-1] where r = monthly rate, n = total months",
+    "workedExample": "r=0.00375, n=360. M = 150000[0.00375(1.00375)^360]/[(1.00375)^360-1] = $760.03",
+    "steps": ["Monthly rate: 0.045/12 = 0.00375", "Total months: 30 x 12 = 360", "(1.00375)^360 = 3.8470", "Numerator: 150000 x 0.00375 x 3.8470 = 2163.94", "Denominator: 3.8470 - 1 = 2.8470", "M = 2163.94 / 2.8470 = $760.03"],
+    "answer": "$760.03/month"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Return on Investment",
+    "problem": "Invested $10,000, sold for $13,500 after 2 years. What is the ROI?",
+    "cheatsheet": "ROI = (Gain / Cost) x 100. Annualized = (1 + ROI)^(1/years) - 1.",
+    "workedExample": "ROI = (3500/10000) x 100 = 35%. Annualized: (1.35)^(1/2) - 1 = 16.2%",
+    "steps": ["Gain: 13500 - 10000 = $3500", "ROI: 3500/10000 = 0.35 = 35%", "Annualized: (1.35)^(0.5) - 1 = 1.162 - 1 = 16.2%"],
+    "answer": "35% total, 16.2% annualized"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Break-Even Analysis",
+    "problem": "Fixed costs: $5000. Variable cost per unit: $8. Selling price: $20. Break-even quantity?",
+    "cheatsheet": "Break-even = Fixed Costs / (Selling Price - Variable Cost per Unit)",
+    "workedExample": "BE = 5000 / (20 - 8) = 5000/12 = 417 units",
+    "steps": ["Contribution margin: 20 - 8 = $12 per unit", "Break-even: 5000 / 12 = 416.67", "Need to sell at least 417 units"],
+    "answer": "417 units"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Inflation Adjustment",
+    "problem": "A $50 item costs $65 after 5 years due to inflation. What was the annual inflation rate?",
+    "cheatsheet": "Future = Present x (1+r)^t. Solve for r.",
+    "workedExample": "65 = 50(1+r)^5 => (1+r)^5 = 1.3 => r = 1.3^(1/5) - 1 = 5.39%",
+    "steps": ["65 = 50(1+r)^5", "(1+r)^5 = 1.30", "1+r = 1.30^(1/5) = 1.0539", "r = 0.0539 = 5.39%"],
+    "answer": "5.39% per year"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Tax Calculation",
+    "problem": "Income $75,000. Tax bracket: 10% on first $10,000, 15% on $10,001-$40,000, 25% on remainder. Tax owed?",
+    "cheatsheet": "Calculate tax for each bracket separately, then sum.",
+    "workedExample": "1000 + 4500 + 8750 = $14,250",
+    "steps": ["First $10,000 at 10%: $1,000", "Next $30,000 at 15%: $4,500", "Remaining $35,000 at 25%: $8,750", "Total tax: $14,250"],
+    "answer": "$14,250"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Present Value",
+    "problem": "What is the present value of $10,000 received in 5 years at 7% discount rate?",
+    "cheatsheet": "PV = FV / (1+r)^t",
+    "workedExample": "PV = 10000 / (1.07)^5 = 10000 / 1.4026 = $7129.86",
+    "steps": ["PV = FV / (1+r)^t", "= 10000 / (1.07)^5", "= 10000 / 1.4026", "= $7129.86"],
+    "answer": "$7129.86"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Rule of 72",
+    "problem": "At 6% annual return, approximately how long to double your money?",
+    "cheatsheet": "Years to double is approximately 72 / interest rate.",
+    "workedExample": "72 / 6 = 12 years",
+    "steps": ["Rule of 72: 72 / rate = years", "72 / 6 = 12 years", "Actual: ln(2)/ln(1.06) = 11.9 years"],
+    "answer": "Approximately 12 years"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Currency Conversion",
+    "problem": "Convert $500 USD to EUR if 1 USD = 0.92 EUR.",
+    "cheatsheet": "Multiply by the exchange rate.",
+    "workedExample": "500 x 0.92 = 460 EUR",
+    "steps": ["500 USD x 0.92 EUR/USD = 460 EUR"],
+    "answer": "460 EUR"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Salary to Hourly",
+    "problem": "Convert a $52,000 annual salary to an hourly rate (40 hrs/week, 52 weeks).",
+    "cheatsheet": "Hourly = Annual / (40 x 52)",
+    "workedExample": "52000 / 2080 = $25 per hour",
+    "steps": ["Total hours per year: 40 x 52 = 2080", "Hourly rate: 52000 / 2080 = $25"],
+    "answer": "$25/hour"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Depreciation (Straight-Line)",
+    "problem": "Equipment costs $20,000, salvage value $2,000, useful life 5 years. Annual depreciation?",
+    "cheatsheet": "Annual depreciation = (Cost - Salvage) / Useful Life",
+    "workedExample": "(20000 - 2000) / 5 = $3600 per year",
+    "steps": ["Depreciable cost: 20000 - 2000 = $18000", "Annual: 18000 / 5 = $3600"],
+    "answer": "$3,600/year"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Future Value of Annuity",
+    "problem": "Save $200/month for 10 years at 6% annual return. Future value?",
+    "cheatsheet": "FV = PMT x [((1+r)^n - 1) / r] where r is monthly rate, n is total months.",
+    "workedExample": "FV = 200 x [((1.005)^120 - 1) / 0.005] = 200 x 163.88 = $32,776",
+    "steps": ["Monthly rate: 0.06/12 = 0.005", "Months: 120", "(1.005)^120 = 1.8194", "FV = 200 x (1.8194 - 1) / 0.005", "= 200 x 163.88 = $32,776"],
+    "answer": "$32,776"
+  },
+  {
+    "category": "Financial Math",
+    "title": "Discount Rate on Sale",
+    "problem": "List price $250, sale price $200. What is the discount percentage?",
+    "cheatsheet": "Discount % = (List - Sale) / List x 100",
+    "workedExample": "(250-200)/250 x 100 = 50/250 x 100 = 20%",
+    "steps": ["Savings: 250 - 200 = $50", "Discount %: 50/250 = 0.20 = 20%"],
+    "answer": "20%"
+  },
+
+  {
+    "category": "Unit Conversions",
+    "title": "Celsius to Fahrenheit",
+    "problem": "Convert 37 degrees Celsius to Fahrenheit.",
+    "cheatsheet": "F = C x (9/5) + 32",
+    "workedExample": "F = 37 x 1.8 + 32 = 66.6 + 32 = 98.6",
+    "steps": ["F = 37 x (9/5) + 32", "= 37 x 1.8 + 32", "= 66.6 + 32 = 98.6"],
+    "answer": "98.6 degrees F"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Fahrenheit to Celsius",
+    "problem": "Convert 212 degrees Fahrenheit to Celsius.",
+    "cheatsheet": "C = (F - 32) x (5/9)",
+    "workedExample": "C = (212-32) x 5/9 = 180 x 5/9 = 100",
+    "steps": ["C = (212 - 32) x (5/9)", "= 180 x (5/9)", "= 100"],
+    "answer": "100 degrees C"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Pounds to Kilograms",
+    "problem": "Convert 165 pounds to kilograms. (1 lb = 0.4536 kg)",
+    "cheatsheet": "Multiply pounds by 0.4536 to get kilograms.",
+    "workedExample": "165 x 0.4536 = 74.84 kg",
+    "steps": ["165 x 0.4536 = 74.844", "Approximately 74.8 kg"],
+    "answer": "74.84 kg"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Miles to Kilometers",
+    "problem": "Convert 26.2 miles (marathon) to kilometers. (1 mi = 1.609 km)",
+    "cheatsheet": "Multiply miles by 1.609 to get kilometers.",
+    "workedExample": "26.2 x 1.609 = 42.16 km",
+    "steps": ["26.2 x 1.609 = 42.156", "Approximately 42.2 km"],
+    "answer": "42.2 km"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Gallons to Liters",
+    "problem": "Convert 15 gallons to liters. (1 gal = 3.785 L)",
+    "cheatsheet": "Multiply gallons by 3.785.",
+    "workedExample": "15 x 3.785 = 56.78 L",
+    "steps": ["15 x 3.785 = 56.775", "Approximately 56.8 L"],
+    "answer": "56.8 L"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Feet to Meters",
+    "problem": "Convert 6 feet 2 inches to meters. (1 ft = 0.3048 m)",
+    "cheatsheet": "Convert to total feet first, then multiply by 0.3048.",
+    "workedExample": "6.167 ft x 0.3048 = 1.88 m",
+    "steps": ["6 ft 2 in = 6 + 2/12 = 6.167 ft", "6.167 x 0.3048 = 1.8796 m", "Approximately 1.88 m"],
+    "answer": "1.88 m"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Inches to Centimeters",
+    "problem": "Convert 48 inches to centimeters. (1 in = 2.54 cm)",
+    "cheatsheet": "Multiply inches by 2.54.",
+    "workedExample": "48 x 2.54 = 121.92 cm",
+    "steps": ["48 x 2.54 = 121.92 cm"],
+    "answer": "121.92 cm"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Square Feet to Square Meters",
+    "problem": "Convert 500 sq ft to square meters. (1 sq ft = 0.0929 sq m)",
+    "cheatsheet": "Multiply by 0.0929 for area conversion.",
+    "workedExample": "500 x 0.0929 = 46.45 sq m",
+    "steps": ["500 x 0.0929 = 46.45 sq m"],
+    "answer": "46.45 sq m"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "MPH to KPH",
+    "problem": "Convert 65 mph to km/h. (1 mph = 1.609 km/h)",
+    "cheatsheet": "Multiply by 1.609.",
+    "workedExample": "65 x 1.609 = 104.6 km/h",
+    "steps": ["65 x 1.609 = 104.585", "Approximately 104.6 km/h"],
+    "answer": "104.6 km/h"
+  },
+  {
+    "category": "Unit Conversions",
+    "title": "Ounces to Grams",
+    "problem": "Convert 16 ounces to grams. (1 oz = 28.35 g)",
+    "cheatsheet": "Multiply ounces by 28.35.",
+    "workedExample": "16 x 28.35 = 453.6 g",
+    "steps": ["16 x 28.35 = 453.6 g (which is 1 pound)"],
+    "answer": "453.6 g"
+  }
+]
