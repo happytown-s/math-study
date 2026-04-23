@@ -1591,19 +1591,19 @@
     "question": "六角形の内角の和を求めよ。",
     "options": [
       {
-        "text": "720 degrees",
+        "text": "720度",
         "correct": true
       },
       {
-        "text": "540 degrees",
+        "text": "540度",
         "correct": false
       },
       {
-        "text": "360 degrees",
+        "text": "360度",
         "correct": false
       },
       {
-        "text": "900 degrees",
+        "text": "900度",
         "correct": false
       }
     ],
@@ -1844,19 +1844,19 @@
     "question": "正八角形の各内角の角度を求めよ。",
     "options": [
       {
-        "text": "135 degrees",
+        "text": "135度",
         "correct": true
       },
       {
-        "text": "120 degrees",
+        "text": "120度",
         "correct": false
       },
       {
-        "text": "144 degrees",
+        "text": "144度",
         "correct": false
       },
       {
-        "text": "150 degrees",
+        "text": "150度",
         "correct": false
       }
     ],
@@ -3063,19 +3063,19 @@
     "question": "「犬ならば哺乳類である」の対偶はどれか。",
     "options": [
       {
-        "text": "If it is not a mammal, then it is not a dog",
+        "text": "哺乳網がりならば、犬ではない",
         "correct": true
       },
       {
-        "text": "If it is a mammal, then it is a dog",
+        "text": "哺乳網であれば、犬である",
         "correct": false
       },
       {
-        "text": "If it is not a dog, then it is not a mammal",
+        "text": "犬でないならば、哺乳網ではない",
         "correct": false
       },
       {
-        "text": "If it is a dog, then it is not a mammal",
+        "text": "犬であれば、哺乳網ではない",
         "correct": false
       }
     ],
@@ -3228,11 +3228,11 @@
         "correct": true
       },
       {
-        "text": "p is True",
+        "text": "pが真",
         "correct": false
       },
       {
-        "text": "q is True",
+        "text": "qが真",
         "correct": false
       },
       {
@@ -3462,7 +3462,7 @@
         "correct": false
       },
       {
-        "text": "3 hours",
+        "text": "3時間",
         "correct": false
       },
       {
@@ -3592,15 +3592,15 @@
     "question": "配管が 12 時間でタンクを満たす。別の配管が 8 時間で空にする。両方を開けた場合、満たすのに何時間かかるか。",
     "options": [
       {
-        "text": "24 hours",
+        "text": "24時間",
         "correct": true
       },
       {
-        "text": "20 hours",
+        "text": "20時間",
         "correct": false
       },
       {
-        "text": "4 hours",
+        "text": "4時間",
         "correct": false
       },
       {
@@ -3642,15 +3642,15 @@
         "correct": true
       },
       {
-        "text": "3 hours",
+        "text": "3時間",
         "correct": false
       },
       {
-        "text": "1 hour",
+        "text": "1時間",
         "correct": false
       },
       {
-        "text": "4 hours",
+        "text": "4時間",
         "correct": false
       }
     ],
@@ -3684,19 +3684,19 @@
     "question": "5 台の機械が 5 分で 5 個の製品を作る。100 台の機械で 100 個を作るには何分かかるか。",
     "options": [
       {
-        "text": "5 minutes",
+        "text": "5分",
         "correct": true
       },
       {
-        "text": "100 minutes",
+        "text": "100分",
         "correct": false
       },
       {
-        "text": "20 minutes",
+        "text": "20分",
         "correct": false
       },
       {
-        "text": "1 minute",
+        "text": "1分",
         "correct": false
       }
     ],
@@ -3776,19 +3776,19 @@
     "question": "プールが毎分 10L 注ぎ込まれ、毎分 3L 排水されている。現在 200L、容量 500L。満タンになるまで何分かかるか。",
     "options": [
       {
-        "text": "42.86 minutes",
+        "text": "42.86分",
         "correct": true
       },
       {
-        "text": "50 minutes",
+        "text": "50分",
         "correct": false
       },
       {
-        "text": "30 minutes",
+        "text": "30分",
         "correct": false
       },
       {
-        "text": "25 minutes",
+        "text": "25分",
         "correct": false
       }
     ],
@@ -3922,11 +3922,11 @@
         "correct": false
       },
       {
-        "text": "1 day",
+        "text": "1日",
         "correct": false
       },
       {
-        "text": "15 days",
+        "text": "15日",
         "correct": false
       }
     ],
@@ -3941,11 +3941,11 @@
         "correct": true
       },
       {
-        "text": "0 degrees",
+        "text": "0度",
         "correct": false
       },
       {
-        "text": "15 degrees",
+        "text": "15度",
         "correct": false
       },
       {

@@ -14,6 +14,27 @@ interface Problem {
   category: string
 }
 
+const categoryNames: Record<string, string> = {
+  'Arithmetic': '算数',
+  'Algebra': '代数',
+  'Geometry': '幾何',
+  'Statistics': '統計',
+  'Logic & Reasoning': '論理と推論',
+  'Word Problems': '文章題',
+  'Number Theory': '整数論',
+  'Graphs & Functions': 'グラフと関数',
+  'Trigonometry': '三角法',
+  'Applied Math': '応用数学',
+  'Mental Math': '暗算',
+  'Percentage Calculations': '百分率計算',
+  'Speed/Rate Problems': '速さ・割合問題',
+  'Probability & Counting': '確率と数え上げ',
+  'Geometry Calculations': '幾何計算',
+  'Algebraic Manipulation': '代数操作',
+  'Financial Math': '金融数学',
+  'Unit Conversions': '単位変換',
+}
+
 const allCategories = [...new Set([
   ...(questions as Question[]).map(q => q.category),
   ...(problems as Problem[]).map(p => p.category),
@@ -40,11 +61,11 @@ export default function Progress({ stats, onReset }: Props) {
   }
 
   const getStrengthLabel = (pct: number) => {
-    if (pct >= 90) return { label: 'Mastered', color: 'text-green-400' }
-    if (pct >= 75) return { label: 'Strong', color: 'text-green-300' }
-    if (pct >= 60) return { label: 'Developing', color: 'text-yellow-400' }
-    if (pct >= 40) return { label: 'Needs Work', color: 'text-orange-400' }
-    return { label: 'Weak', color: 'text-red-400' }
+    if (pct >= 90) return { label: '習得済み', color: 'text-green-400' }
+    if (pct >= 75) return { label: '得意', color: 'text-green-300' }
+    if (pct >= 60) return { label: '発展中', color: 'text-yellow-400' }
+    if (pct >= 40) return { label: '要練習', color: 'text-orange-400' }
+    return { label: '苦手', color: 'text-red-400' }
   }
 
   const quizEntries = (Object.entries(quizStats) as [string, StatEntry][]).sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total))
@@ -64,16 +85,18 @@ export default function Progress({ stats, onReset }: Props) {
     if (pct < 60) weaknesses.push(e.key)
   }
 
+  const catLabel = (cat: string) => categoryNames[cat] || cat
+
   return (
     <div className="space-y-6">
       <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-lg font-semibold text-purple-300">Overall Progress</h2>
+          <h2 className="text-lg font-semibold text-purple-300">全体の進捗</h2>
           <button
             onClick={onReset}
             className="text-xs text-gray-500 hover:text-red-400 transition-colors px-2 py-1 rounded hover:bg-dark-600"
           >
-            Reset All
+            全てリセット
           </button>
         </div>
 
@@ -81,22 +104,22 @@ export default function Progress({ stats, onReset }: Props) {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="bg-dark-700 rounded-lg p-4 text-center">
               <div className="text-3xl font-bold text-purple-400">{overallAcc}%</div>
-              <div className="text-sm text-gray-400">Overall Accuracy</div>
+              <div className="text-sm text-gray-400">全体正答率</div>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div className="bg-dark-700 rounded-lg p-3 text-center">
                 <div className="text-xl font-bold text-white">{totalQuiz + totalCalc}</div>
-                <div className="text-xs text-gray-500">Answered</div>
+                <div className="text-xs text-gray-500">解答数</div>
               </div>
               <div className="bg-dark-700 rounded-lg p-3 text-center">
                 <div className="text-xl font-bold text-green-400">{totalQuizCorrect + totalCalcCorrect}</div>
-                <div className="text-xs text-gray-500">Correct</div>
+                <div className="text-xs text-gray-500">正解数</div>
               </div>
             </div>
           </div>
         ) : (
           <div className="text-center py-8 text-gray-500">
-            No activity yet. Start practicing to see your progress!
+            まだ練習していません。始めてみましょう!
           </div>
         )}
       </div>
@@ -105,12 +128,12 @@ export default function Progress({ stats, onReset }: Props) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {strengths.length > 0 && (
             <div className="bg-dark-800 rounded-xl p-5 border border-green-900/30">
-              <h3 className="text-sm font-semibold text-green-400 mb-3">Strengths</h3>
+              <h3 className="text-sm font-semibold text-green-400 mb-3">得意分野</h3>
               <div className="space-y-2">
                 {strengths.map(s => (
                   <div key={s} className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-green-500" />
-                    <span className="text-sm text-gray-300">{s}</span>
+                    <span className="text-sm text-gray-300">{catLabel(s)}</span>
                   </div>
                 ))}
               </div>
@@ -118,12 +141,12 @@ export default function Progress({ stats, onReset }: Props) {
           )}
           {weaknesses.length > 0 && (
             <div className="bg-dark-800 rounded-xl p-5 border border-red-900/30">
-              <h3 className="text-sm font-semibold text-red-400 mb-3">Needs Improvement</h3>
+              <h3 className="text-sm font-semibold text-red-400 mb-3">苦手分野</h3>
               <div className="space-y-2">
                 {weaknesses.map(w => (
                   <div key={w} className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-red-500" />
-                    <span className="text-sm text-gray-300">{w}</span>
+                    <span className="text-sm text-gray-300">{catLabel(w)}</span>
                   </div>
                 ))}
               </div>
@@ -134,7 +157,7 @@ export default function Progress({ stats, onReset }: Props) {
 
       {quizEntries.length > 0 && (
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Quiz - By Category</h2>
+          <h2 className="text-lg font-semibold text-purple-300 mb-4">問題集 - カテゴリ別</h2>
           <div className="space-y-3">
             {quizEntries.map(([cat, v]) => {
               const pct = v.total > 0 ? Math.round((v.correct / v.total) * 100) : 0
@@ -144,7 +167,7 @@ export default function Progress({ stats, onReset }: Props) {
                 <div key={cat}>
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-medium text-gray-300">{cat}</span>
+                      <span className="text-sm font-medium text-gray-300">{catLabel(cat)}</span>
                       <span className={`text-xs ${strength.color}`}>{strength.label}</span>
                     </div>
                     <span className="text-sm text-gray-400">{v.correct}/{v.total} ({pct}%)</span>
@@ -161,7 +184,7 @@ export default function Progress({ stats, onReset }: Props) {
 
       {calcEntries.length > 0 && (
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Calc Training - By Topic</h2>
+          <h2 className="text-lg font-semibold text-purple-300 mb-4">計算トレーニング - トピック別</h2>
           <div className="space-y-3">
             {calcEntries.map(([cat, v]) => {
               const pct = v.total > 0 ? Math.round((v.correct / v.total) * 100) : 0
@@ -171,7 +194,7 @@ export default function Progress({ stats, onReset }: Props) {
                 <div key={cat}>
                   <div className="flex items-center justify-between mb-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-sm font-medium text-gray-300">{cat}</span>
+                      <span className="text-sm font-medium text-gray-300">{catLabel(cat)}</span>
                       <span className={`text-xs ${strength.color}`}>{strength.label}</span>
                     </div>
                     <span className="text-sm text-gray-400">{v.correct}/{v.total} ({pct}%)</span>
@@ -187,7 +210,7 @@ export default function Progress({ stats, onReset }: Props) {
       )}
 
       <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-        <h2 className="text-lg font-semibold text-purple-300 mb-4">Category Coverage</h2>
+        <h2 className="text-lg font-semibold text-purple-300 mb-4">カテゴリカバレッジ</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
           {allCategories.map(cat => {
             const hasQuiz = quizStats[cat] as StatEntry | undefined
@@ -202,11 +225,11 @@ export default function Progress({ stats, onReset }: Props) {
                     : 'bg-dark-900 border-dark-600 opacity-50'
                 }`}
               >
-                <div className="text-sm font-medium text-gray-300 mb-1">{cat}</div>
+                <div className="text-sm font-medium text-gray-300 mb-1">{catLabel(cat)}</div>
                 <div className="text-xs text-gray-500">
                   {activity
-                    ? `${(hasQuiz?.total ?? 0) + (hasCalc?.total ?? 0)} answered`
-                    : 'Not started'}
+                    ? `${(hasQuiz?.total ?? 0) + (hasCalc?.total ?? 0)} 問解答済み`
+                    : '未開始'}
                 </div>
               </div>
             )

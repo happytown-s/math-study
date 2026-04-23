@@ -17,6 +17,17 @@ interface Problem {
   answer: string
 }
 
+const categoryNames: Record<string, string> = {
+  'Mental Math': '暗算',
+  'Percentage Calculations': '百分率計算',
+  'Speed/Rate Problems': '速さ・割合問題',
+  'Probability & Counting': '確率と数え上げ',
+  'Geometry Calculations': '幾何計算',
+  'Algebraic Manipulation': '代数操作',
+  'Financial Math': '金融数学',
+  'Unit Conversions': '単位変換',
+}
+
 const categories = [...new Set((problems as Problem[]).map(p => p.category))].sort()
 
 type View = 'menu' | 'solve' | 'learn'
@@ -70,11 +81,13 @@ export default function CalcTraining({ stats, updateStats }: Props) {
     setUserAnswer('')
   }
 
+  const catLabel = (cat: string) => categoryNames[cat] || cat
+
   if (view === 'menu') {
     return (
       <div className="space-y-4">
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Select Topic</h2>
+          <h2 className="text-lg font-semibold text-purple-300 mb-4">トピック選択</h2>
           <div className="flex flex-wrap gap-2 mb-6">
             {categories.map(cat => (
               <button
@@ -86,7 +99,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
                     : 'bg-dark-600 text-gray-400 hover:text-white'
                 }`}
               >
-                {cat}
+                {catLabel(cat)}
                 <span className="text-gray-600 ml-1">({(problems as Problem[]).filter(p => p.category === cat).length})</span>
               </button>
             ))}
@@ -97,18 +110,18 @@ export default function CalcTraining({ stats, updateStats }: Props) {
               onClick={() => { setCurrentIndex(0); setView('solve'); setShowResult(false); setShowAllSteps(false); setUserAnswer('') }}
               className="flex-1 px-4 py-3 bg-purple-700 hover:bg-purple-600 rounded-xl font-medium transition-colors"
             >
-              Practice Mode
+              練習モード
             </button>
             <button
               onClick={() => { setCurrentIndex(0); setView('learn') }}
               className="flex-1 px-4 py-3 bg-dark-600 hover:bg-dark-500 border border-purple-900/30 rounded-xl font-medium transition-colors"
             >
-              Learn / Reference
+              学習 / 参考資料
             </button>
           </div>
 
           <div className="border-t border-purple-900/20 pt-4">
-            <h3 className="text-sm font-semibold text-gray-400 mb-3">Problems in this topic</h3>
+            <h3 className="text-sm font-semibold text-gray-400 mb-3">このトピックの問題</h3>
             <div className="grid gap-2">
               {filtered.map((p, i) => {
                 const s = stats[category]
@@ -142,7 +155,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
     return (
       <div className="space-y-4">
         <button onClick={() => setView('menu')} className="text-sm text-gray-400 hover:text-white transition-colors">
-          &larr; Back to menu
+          &larr; メニューに戻る
         </button>
         <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
           {filtered.map((_p, i) => (
@@ -160,27 +173,27 @@ export default function CalcTraining({ stats, updateStats }: Props) {
         {current && (
           <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30 space-y-5">
             <div>
-              <div className="text-xs text-purple-400 font-medium uppercase tracking-wider mb-1">{current.category}</div>
+              <div className="text-xs text-purple-400 font-medium uppercase tracking-wider mb-1">{catLabel(current.category)}</div>
               <h2 className="text-xl font-bold text-white">{current.title}</h2>
             </div>
 
             <div className="bg-dark-700 rounded-lg p-4 border border-purple-900/20">
-              <div className="text-sm font-semibold text-purple-400 mb-2">Cheatsheet</div>
+              <div className="text-sm font-semibold text-purple-400 mb-2">チートシート</div>
               <p className="text-gray-300 text-sm leading-relaxed">{current.cheatsheet}</p>
             </div>
 
             <div>
-              <div className="text-sm font-semibold text-purple-400 mb-2">Problem</div>
+              <div className="text-sm font-semibold text-purple-400 mb-2">問題</div>
               <p className="text-white text-lg">{current.problem}</p>
             </div>
 
             <div className="bg-dark-700 rounded-lg p-4 border border-purple-900/20">
-              <div className="text-sm font-semibold text-purple-400 mb-2">Worked Example</div>
+              <div className="text-sm font-semibold text-purple-400 mb-2">例題</div>
               <p className="text-gray-300 text-sm leading-relaxed">{current.workedExample}</p>
             </div>
 
             <div>
-              <div className="text-sm font-semibold text-purple-400 mb-3">Step-by-Step Solution</div>
+              <div className="text-sm font-semibold text-purple-400 mb-3">ステップバイステップ解法</div>
               <div className="space-y-2">
                 {current.steps.map((step, i) => (
                   <div key={i} className="flex gap-3 items-start">
@@ -194,7 +207,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
             </div>
 
             <div className="bg-green-900/20 rounded-lg p-4 border border-green-800/30">
-              <div className="text-sm font-semibold text-green-400 mb-1">Answer</div>
+              <div className="text-sm font-semibold text-green-400 mb-1">解答</div>
               <p className="text-green-300 text-lg font-semibold">{current.answer}</p>
             </div>
           </div>
@@ -207,9 +220,9 @@ export default function CalcTraining({ stats, updateStats }: Props) {
   if (!current) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No problems in this category.
+        このカテゴリには問題がありません。
         <button onClick={() => setView('menu')} className="block mx-auto mt-4 text-purple-400 hover:text-purple-300">
-          Go back
+          戻る
         </button>
       </div>
     )
@@ -219,10 +232,10 @@ export default function CalcTraining({ stats, updateStats }: Props) {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <button onClick={() => setView('menu')} className="text-sm text-gray-400 hover:text-white transition-colors">
-          &larr; Back
+          &larr; 戻る
         </button>
         <div className="flex items-center gap-3">
-          <span className="bg-dark-600 px-2 py-0.5 rounded text-purple-300 text-xs">{current.category}</span>
+          <span className="bg-dark-600 px-2 py-0.5 rounded text-purple-300 text-xs">{catLabel(current.category)}</span>
           <span className="text-gray-500 text-sm">{currentIndex + 1}/{filtered.length}</span>
         </div>
       </div>
@@ -233,7 +246,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
         {current.cheatsheet && (
           <details className="mt-3 text-sm">
             <summary className="text-gray-500 cursor-pointer hover:text-purple-400 transition-colors">
-              Show hint / cheatsheet
+              ヒント / チートシートを表示
             </summary>
             <p className="mt-2 text-gray-400 bg-dark-700 p-3 rounded-lg">{current.cheatsheet}</p>
           </details>
@@ -248,7 +261,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
               value={userAnswer}
               onChange={e => setUserAnswer(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Type your answer..."
+              placeholder="回答を入力..."
               className="flex-1 bg-dark-600 border border-purple-900/30 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-600 transition-colors"
               autoFocus
             />
@@ -257,7 +270,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
               disabled={!userAnswer.trim()}
               className="px-6 py-3 bg-purple-700 hover:bg-purple-600 rounded-lg font-medium transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
             >
-              Check
+              確認
             </button>
           </div>
         </div>
@@ -265,14 +278,14 @@ export default function CalcTraining({ stats, updateStats }: Props) {
         <div className={`rounded-xl p-6 border ${isCorrect ? 'bg-green-900/20 border-green-800/30' : 'bg-red-900/20 border-red-800/30'}`}>
           <div className="flex items-center gap-2 mb-4">
             <span className={`text-2xl font-bold ${isCorrect ? 'text-green-400' : 'text-red-400'}`}>
-              {isCorrect ? 'Correct!' : 'Not quite'}
+              {isCorrect ? '正解!' : '不正解'}
             </span>
           </div>
 
           {!isCorrect && (
             <div className="mb-4">
-              <div className="text-sm text-gray-400 mb-1">Your answer: <span className="text-red-400">{userAnswer}</span></div>
-              <div className="text-sm text-gray-400">Correct answer: <span className="text-green-400 font-semibold">{current.answer}</span></div>
+              <div className="text-sm text-gray-400 mb-1">あなたの回答: <span className="text-red-400">{userAnswer}</span></div>
+              <div className="text-sm text-gray-400">正解: <span className="text-green-400 font-semibold">{current.answer}</span></div>
             </div>
           )}
 
@@ -280,7 +293,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
             onClick={() => setShowAllSteps(!showAllSteps)}
             className="text-sm text-purple-400 hover:text-purple-300 mb-3 transition-colors"
           >
-            {showAllSteps ? 'Hide' : 'Show'} step-by-step solution
+            {showAllSteps ? '非表示' : '表示'} - ステップバイステップ解法
           </button>
 
           {showAllSteps && (
@@ -298,7 +311,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
 
           <div className="bg-dark-700 rounded-lg p-3 border border-purple-900/20">
             <p className="text-sm text-gray-300">
-              <span className="text-purple-400 font-medium">Quick ref:</span> {current.workedExample}
+              <span className="text-purple-400 font-medium">クイック参考:</span> {current.workedExample}
             </p>
           </div>
         </div>
@@ -310,7 +323,7 @@ export default function CalcTraining({ stats, updateStats }: Props) {
             onClick={nextProblem}
             className="px-6 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg font-medium transition-colors"
           >
-            Next Problem &rarr;
+            次の問題 &rarr;
           </button>
         </div>
       )}

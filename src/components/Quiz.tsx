@@ -16,6 +16,19 @@ interface Question {
   explanation: string
 }
 
+const categoryNames: Record<string, string> = {
+  'Arithmetic': '算数',
+  'Algebra': '代数',
+  'Geometry': '幾何',
+  'Statistics': '統計',
+  'Logic & Reasoning': '論理と推論',
+  'Word Problems': '文章題',
+  'Number Theory': '整数論',
+  'Graphs & Functions': 'グラフと関数',
+  'Trigonometry': '三角法',
+  'Applied Math': '応用数学',
+}
+
 const EXAM_SIZE = 20
 const categories = [...new Set((questions as Question[]).map(q => q.category))].sort()
 
@@ -90,11 +103,13 @@ export default function Quiz({ stats, updateStats }: Props) {
     return 'text-red-400'
   }
 
+  const catLabel = (cat: string) => categoryNames[cat] || cat
+
   if (!started) {
     return (
       <div className="space-y-6">
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Category</h2>
+          <h2 className="text-lg font-semibold text-purple-300 mb-4">カテゴリ</h2>
           <div className="flex flex-wrap gap-2">
             <button
               onClick={() => setCategory('All')}
@@ -104,7 +119,7 @@ export default function Quiz({ stats, updateStats }: Props) {
                   : 'bg-dark-600 text-gray-400 hover:text-white'
               }`}
             >
-              All ({(questions as Question[]).length})
+              全カテゴリ ({(questions as Question[]).length})
             </button>
             {categories.map(cat => (
               <button
@@ -116,7 +131,7 @@ export default function Quiz({ stats, updateStats }: Props) {
                     : 'bg-dark-600 text-gray-400 hover:text-white'
                 }`}
               >
-                <span className={getCategoryColor(cat)}>{cat}</span>
+                <span className={getCategoryColor(cat)}>{catLabel(cat)}</span>
                 <span className="text-gray-600 ml-1">
                   ({(questions as Question[]).filter(q => q.category === cat).length})
                 </span>
@@ -126,28 +141,28 @@ export default function Quiz({ stats, updateStats }: Props) {
         </div>
 
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-900/30">
-          <h2 className="text-lg font-semibold text-purple-300 mb-4">Mode</h2>
+          <h2 className="text-lg font-semibold text-purple-300 mb-4">モード</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <button
               onClick={() => { setMode('drill'); startDrill() }}
               className="bg-dark-600 hover:bg-dark-500 border border-purple-900/30 rounded-xl p-4 text-left transition-all hover:border-purple-600"
             >
-              <div className="text-purple-400 font-semibold mb-1">Drill</div>
-              <div className="text-sm text-gray-400">Practice one question at a time. Immediate feedback.</div>
+              <div className="text-purple-400 font-semibold mb-1">ドリル</div>
+              <div className="text-sm text-gray-400">1問ずつ練習。即時フィードバック。</div>
             </button>
             <button
               onClick={() => { setMode('exam'); shuffleExam() }}
               className="bg-dark-600 hover:bg-dark-500 border border-purple-900/30 rounded-xl p-4 text-left transition-all hover:border-purple-600"
             >
-              <div className="text-purple-400 font-semibold mb-1">Exam</div>
-              <div className="text-sm text-gray-400">{EXAM_SIZE} random questions with score tracking.</div>
+              <div className="text-purple-400 font-semibold mb-1">模擬試験</div>
+              <div className="text-sm text-gray-400">{EXAM_SIZE}問ランダム出題。スコア記録。</div>
             </button>
             <button
               onClick={() => { setMode('review'); setStarted(true) }}
               className="bg-dark-600 hover:bg-dark-500 border border-purple-900/30 rounded-xl p-4 text-left transition-all hover:border-purple-600"
             >
-              <div className="text-purple-400 font-semibold mb-1">Review</div>
-              <div className="text-sm text-gray-400">Browse questions with explanations. No scoring.</div>
+              <div className="text-purple-400 font-semibold mb-1">復習</div>
+              <div className="text-sm text-gray-400">解説付きで問題を閲覧。採点なし。</div>
             </button>
           </div>
         </div>
@@ -158,9 +173,9 @@ export default function Quiz({ stats, updateStats }: Props) {
   if (!q) {
     return (
       <div className="text-center py-12 text-gray-500">
-        No questions available.
+        問題がありません。
         <button onClick={() => setStarted(false)} className="block mx-auto mt-4 text-purple-400 hover:text-purple-300">
-          Go back
+          戻る
         </button>
       </div>
     )
@@ -175,12 +190,12 @@ export default function Quiz({ stats, updateStats }: Props) {
           onClick={() => setStarted(false)}
           className="text-sm text-gray-400 hover:text-white transition-colors"
         >
-          &larr; Back
+          &larr; 戻る
         </button>
         <div className="flex items-center gap-3 text-sm">
           {mode !== 'review' && (
             <span className="text-gray-400">
-              Score: <span className="text-purple-400 font-semibold">{sessionScore.correct}/{sessionScore.total}</span>
+              スコア: <span className="text-purple-400 font-semibold">{sessionScore.correct}/{sessionScore.total}</span>
             </span>
           )}
           {mode === 'exam' && (
@@ -188,7 +203,7 @@ export default function Quiz({ stats, updateStats }: Props) {
               {currentQ + 1}/{examQuestions.length}
             </span>
           )}
-          <span className="bg-dark-600 px-2 py-0.5 rounded text-purple-300 text-xs">{q.category}</span>
+          <span className="bg-dark-600 px-2 py-0.5 rounded text-purple-300 text-xs">{catLabel(q.category)}</span>
         </div>
       </div>
 
@@ -214,7 +229,7 @@ export default function Quiz({ stats, updateStats }: Props) {
                 <span className="text-sm font-medium">
                   <span className="text-gray-500 mr-2">{String.fromCharCode(65 + idx)}.</span>
                   {opt.text}
-                  {showAnswer && opt.correct && <span className="text-green-400 ml-2"> (correct)</span>}
+                  {showAnswer && opt.correct && <span className="text-green-400 ml-2"> (正解)</span>}
                 </span>
               </button>
             )
@@ -224,32 +239,32 @@ export default function Quiz({ stats, updateStats }: Props) {
 
       {showAnswer && (
         <div className="bg-dark-700 rounded-xl p-5 border border-purple-900/20">
-          <div className="text-sm font-semibold text-purple-400 mb-2">Explanation</div>
+          <div className="text-sm font-semibold text-purple-400 mb-2">解説</div>
           <p className="text-gray-300 text-sm leading-relaxed">{q.explanation}</p>
         </div>
       )}
 
       {isExamDone && (
         <div className="bg-dark-800 rounded-xl p-6 border border-purple-700/50 text-center">
-          <div className="text-2xl font-bold text-purple-400 mb-2">Exam Complete</div>
+          <div className="text-2xl font-bold text-purple-400 mb-2">試験完了</div>
           <div className="text-4xl font-bold mb-2">
             {Math.round((sessionScore.correct / sessionScore.total) * 100)}%
           </div>
           <div className="text-gray-400 mb-4">
-            {sessionScore.correct} out of {sessionScore.total} correct
+            {sessionScore.correct} / {sessionScore.total} 問正解
           </div>
           <div className="flex gap-3 justify-center">
             <button
               onClick={() => { setMode('exam'); shuffleExam() }}
               className="px-4 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg text-sm font-medium transition-colors"
             >
-              Try Again
+              再挑戦
             </button>
             <button
               onClick={() => setStarted(false)}
               className="px-4 py-2 bg-dark-600 hover:bg-dark-500 rounded-lg text-sm font-medium transition-colors"
             >
-              Back to Menu
+              メニューに戻る
             </button>
           </div>
         </div>
@@ -261,7 +276,7 @@ export default function Quiz({ stats, updateStats }: Props) {
             onClick={next}
             className="px-6 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg font-medium transition-colors"
           >
-            Next &rarr;
+            次へ &rarr;
           </button>
         </div>
       )}
@@ -273,7 +288,7 @@ export default function Quiz({ stats, updateStats }: Props) {
             disabled={currentQ === 0}
             className="px-4 py-2 bg-dark-600 hover:bg-dark-500 rounded-lg text-sm disabled:opacity-30 transition-colors"
           >
-            &larr; Previous
+            &larr; 前へ
           </button>
           <button
             onClick={() => {
@@ -286,7 +301,7 @@ export default function Quiz({ stats, updateStats }: Props) {
             disabled={currentQ >= filtered.length - 1}
             className="px-4 py-2 bg-dark-600 hover:bg-dark-500 rounded-lg text-sm disabled:opacity-30 transition-colors"
           >
-            Next &rarr;
+            次へ &rarr;
           </button>
         </div>
       )}

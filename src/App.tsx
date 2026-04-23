@@ -46,9 +46,9 @@ export default function App() {
   }
 
   const tabs: { id: Tab; label: string }[] = [
-    { id: 'quiz', label: 'Quiz' },
-    { id: 'calc', label: 'Calc Training' },
-    { id: 'progress', label: 'Progress' },
+    { id: 'quiz', label: '問題集' },
+    { id: 'calc', label: '計算トレーニング' },
+    { id: 'progress', label: '進捗' },
   ]
 
   return (
